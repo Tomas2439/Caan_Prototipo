@@ -1,5 +1,5 @@
 ---
-name: Kindred Paws
+name: Caan_Prototipo
 colors:
   surface: '#f8faf6'
   surface-dim: '#d8dbd7'
