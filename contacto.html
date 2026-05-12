@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contacto - CAAN</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#002114",
+                        "inverse-surface": "#2e312f",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-highest": "#e1e3df",
+                        "tertiary-container": "#8d4d4e",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e1e3df",
+                        "on-tertiary-fixed-variant": "#6f3537",
+                        "on-tertiary-container": "#ffcfce",
+                        "outline": "#707973",
+                        "on-surface": "#191c1a",
+                        "primary-fixed": "#b1f0ce",
+                        "surface-container-low": "#f2f4f0",
+                        "tertiary-fixed-dim": "#ffb3b3",
+                        "on-primary-fixed-variant": "#0e5138",
+                        "error": "#ba1a1a",
+                        "secondary-fixed": "#ffdcbc",
+                        "surface-tint": "#2c694e",
+                        "tertiary-fixed": "#ffdad9",
+                        "on-primary-container": "#a8e7c5",
+                        "background": "#f8faf6",
+                        "on-secondary-fixed": "#2c1700",
+                        "surface-dim": "#d8dbd7",
+                        "primary-container": "#2d6a4f",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#95d4b3",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#eff1ed",
+                        "secondary": "#895100",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#bfc9c1",
+                        "secondary-fixed-dim": "#ffb86b",
+                        "surface-bright": "#f8faf6",
+                        "on-error-container": "#93000a",
+                        "primary": "#0f5238",
+                        "surface-container": "#eceeea",
+                        "on-surface-variant": "#404943",
+                        "tertiary": "#713638",
+                        "secondary-container": "#fd9d1a",
+                        "on-background": "#191c1a",
+                        "surface-container-high": "#e7e9e5",
+                        "on-secondary-container": "#663b00",
+                        "on-tertiary-fixed": "#390b0e",
+                        "surface": "#f8faf6",
+                        "on-secondary-fixed-variant": "#683d00",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#95d4b3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xs": "4px",
+                        "xl": "80px",
+                        "gutter": "24px",
+                        "md": "24px",
+                        "base": "8px",
+                        "lg": "48px",
+                        "container_max": "1280px",
+                        "sm": "12px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Be Vietnam Pro"],
+                        "h1": ["Plus Jakarta Sans"],
+                        "h3": ["Plus Jakarta Sans"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "h2": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "h1": ["48px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "h3": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-sm": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "h2": ["36px", { "lineHeight": "1.2", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col pt-20">
+    <!-- TopNavBar -->
+    <nav
+        class="bg-white/95 dark:bg-stone-950/95 backdrop-blur-md fixed top-0 w-full z-50 border-b border-stone-100 dark:border-stone-800 shadow-[0_4px_30px_rgba(0,0,0,0.05)]">
+        <div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
+            <!-- Brand Logo -->
+            <a class="text-2xl font-extrabold tracking-tighter text-emerald-900 dark:text-emerald-50 pt-10"
+                href="./index.html">
+                <img src="./CaanLogo.png" alt="Logo CAAN" class="w-32 h-auto" />
+            </a>
+            <!-- Navigation Links -->
+            <div
+                class="hidden md:flex items-center space-x-6 font-sans text-sm font-medium tracking-tight text-emerald-800 dark:text-emerald-400">
+                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
+                    href="./index.html">Inicio</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
+                    href="./sobre_nosotros.html">Sobre Nosotros</a> <!-- Semantic Intent Match -->
+                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
+                    href="./adopciones.html">Adopciones</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
+                    href="./noticias.html">Noticias</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
+                    href="./faq.html">FAQ</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
+                    href="./denuncias.html">Denuncias</a>
+                <a class="text-emerald-700 dark:text-emerald-300 border-b-2 border-emerald-700 pb-1 px-3 py-2"
+                    href="#">Contacto</a>
+            </div>
+            <!-- Trailing Action -->
+            <a href="./donaciones.html">
+                <button
+                    class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded-full hover:bg-primary-container active:scale-95 transition-transform duration-200">
+                    Donar
+                </button>
+            </a>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="flex-grow flex flex-col items-center w-full">
+        <!-- Hero Section -->
+        <section class="w-full bg-surface-container-low py-xl px-gutter flex justify-center">
+            <div class="max-w-container_max w-full text-center">
+                <h1 class="font-h1 text-h1 text-on-surface mb-md">Estamos aquí para ayudarte</h1>
+                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">¿Tienes dudas sobre
+                    adopciones, quieres ser voluntario o necesitas reportar un caso? Contáctanos y responderemos lo
+                    antes posible.</p>
+            </div>
+        </section>
+        <!-- Contact Form & Info Grid -->
+        <section class="w-full max-w-container_max px-gutter py-xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-lg">
+                <!-- Form Area -->
+                <div class="bg-surface rounded-xl p-lg shadow-sm border border-outline-variant/30">
+                    <h2 class="font-h3 text-h3 text-on-surface mb-md">Envíanos un mensaje</h2>
+                    <form class="space-y-md">
+                        <div>
+                            <label class="block font-label-sm text-label-sm text-on-surface-variant mb-xs"
+                                for="name">Nombre completo</label>
+                            <input
+                                class="w-full bg-surface-container-lowest border border-outline rounded-lg px-sm py-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
+                                id="name" placeholder="Tu nombre" type="text" />
+                        </div>
+                        <div>
+                            <label class="block font-label-sm text-label-sm text-on-surface-variant mb-xs"
+                                for="email">Correo electrónico</label>
+                            <input
+                                class="w-full bg-surface-container-lowest border border-outline rounded-lg px-sm py-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
+                                id="email" placeholder="tu@email.com" type="email" />
+                        </div>
+                        <div>
+                            <label class="block font-label-sm text-label-sm text-on-surface-variant mb-xs"
+                                for="subject">Asunto</label>
+                            <select
+                                class="w-full bg-surface-container-lowest border border-outline rounded-lg px-sm py-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
+                                id="subject">
+                                <option>Adopción</option>
+                                <option>Voluntariado</option>
+                                <option>Donaciones</option>
+                                <option>Reportar Maltrato</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block font-label-sm text-label-sm text-on-surface-variant mb-xs"
+                                for="message">Mensaje</label>
+                            <textarea
+                                class="w-full bg-surface-container-lowest border border-outline rounded-lg px-sm py-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors resize-none"
+                                id="message" placeholder="¿En qué podemos ayudarte?" rows="5"></textarea>
+                        </div>
+                        <button
+                            class="w-full bg-primary text-on-primary py-sm rounded-lg font-label-sm text-label-sm hover:opacity-90 active:scale-[0.98] transition-all"
+                            type="button">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <!-- Info Area -->
+                <div class="flex flex-col gap-lg">
+                    <!-- Contact Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+                        <div class="bg-surface-container-low p-md rounded-xl flex flex-col items-start gap-sm">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+                                <span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+                            </div>
+                            <div>
+                                <h3 class="font-h3 text-h3 text-on-surface text-[18px]">Visítanos</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant">Calle 521-3554 (residencia)<br/> Quequén, Pcia. Buenos Aires</p><br>
+                                <p class="font-body-md text-body-md text-on-surface-variant">Calle 107 y 66 (predio)<br/> Necochea, Pcia. Buenos Aires</p>
+                            </div>
+                        </div>
+                        <div class="bg-surface-container-low p-md rounded-xl flex flex-col items-start gap-sm">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+                                <span class="material-symbols-outlined" data-icon="call">call</span>
+                            </div>
+                            <div>
+                                <h3 class="font-h3 text-h3 text-on-surface text-[18px]">Llámanos</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant">+54 (2262)
+                                    12-3456<br/>
+                                    Lunes - Domingo <br> 9am - 1pm <br> 3pm - 6pm<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-surface-container-low p-md rounded-xl flex flex-col items-start gap-sm">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+                                <span class="material-symbols-outlined" data-icon="mail">mail</span>
+                            </div>
+                            <div>
+                                <h3 class="font-h3 text-h3 text-on-surface text-[18px]">Escríbenos</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant">caan_necochea@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="bg-surface-container-low p-md rounded-xl flex flex-col items-start gap-sm">
+                            <div
+                                class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center">
+                                <span class="material-symbols-outlined" data-icon="share">share</span>
+                            </div>
+                            <div>
+                                <h3 class="font-h3 text-h3 text-on-surface text-[18px]">Síguenos</h3>
+                                <div class="flex gap-2 mt-1 text-primary">
+                                    <span
+                                        class="material-symbols-outlined cursor-pointer hover:text-primary-container transition-colors"
+                                        data-icon="public">photo_camera</span>
+                                        <a href="https://www.instagram.com/caanecochea/">Instagram</a>
+                                </div>
+                                <div class="flex gap-2 mt-1 text-primary">
+                                    <span class="material-symbols-outlined cursor-pointer hover:text-primary-container transition-colors"
+                                        data-icon="public">globe</span>
+                                        <a href="https://www.facebook.com/groups/291987354785530">Facebook</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Map Image Placeholder -->
+                    <div
+                        class="w-full h-64 bg-surface-variant rounded-xl overflow-hidden relative shadow-sm border border-outline-variant/20">
+                        <img alt="Mapa de ubicación" class="w-full h-full object-cover"
+                            data-alt="clean minimal map interface showing a location pin on a street grid with soft lighting"
+                            data-location="Ciudad"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJplztwX4mBmO8s52AD91_itgD3bYqyXFlKpRRuLlR4TdOZ3OhFhi0ii7wkFLDacZ9kWpVK2r7NHu3BklGSCQPqNgctJ31fUXoZh51A5fDcPZXnXvbsM4QTCQPqIw9eUJ4Fajihq4BDjkY1INbXb0i1Tq0D9Ch9n2M04koeBAEFagG8dreIAvUBXsTMAyTdqomaMRmVUa-rgLu_RTr_LZX34MSDbjwYEFGjrwg_3fyHgmVlV57hnSXCidlXpnS419b08-S6Ano795V" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-stone-50 dark:bg-stone-900 border-t border-stone-200 dark:border-stone-800 w-full py-12">
+        <div class="max-w-[1280px] mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Brand -->
+            <div class="space-y-4">
+                <p class="font-bold text-lg text-emerald-900 dark:text-emerald-50">CAAN</p>
+                <p class="font-sans text-sm text-stone-500">© 2024 CAAN. Todos los derechos reservados.</p>
+            </div>
+            <!-- Links -->
+            <div class="flex flex-col space-y-2">
+                <a class="font-sans text-sm text-stone-500 hover:text-emerald-600 hover:underline transition-all opacity-80 hover:opacity-100"
+                    href="#">Privacidad</a>
+                <a class="font-sans text-sm text-stone-500 hover:text-emerald-600 hover:underline transition-all opacity-80 hover:opacity-100"
+                    href="#">Términos de Uso</a>
+                <a class="font-sans text-sm text-stone-500 hover:text-emerald-600 hover:underline transition-all opacity-80 hover:opacity-100"
+                    href="#">Voluntariado</a>
+                <a class="font-sans text-sm text-stone-500 hover:text-emerald-600 hover:underline transition-all opacity-80 hover:opacity-100"
+                    href="#">Prensa</a>
+            </div>
+            <!-- Additional Contact/Social (Implicit from layout logic) -->
+            <div class="flex flex-col space-y-4 items-start md:items-end">
+                <button
+                    class="bg-primary-container text-on-primary-container font-label-sm text-label-sm px-6 py-2 rounded-full hover:bg-primary transition-colors hover:text-on-primary">
+                    <a href="../contacto/code.html">Contáctanos</a>
+                </button>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
