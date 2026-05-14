@@ -204,6 +204,32 @@
         <!-- Filters & Grid Section -->
         <main class="py-lg bg-surface">
                 <div class="max-w-container_max mx-auto px-gutter">
+                        <div
+                                class="bg-primary-container/30 border border-primary/20 rounded-2xl p-6 mb-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-sm">
+
+                                <div class="flex items-start gap-4">
+                                        <div
+                                                class="p-3 bg-primary/10 rounded-full text-primary shrink-0 hidden sm:flex items-center justify-center">
+                                                <span class="material-symbols-outlined"
+                                                        style="font-variation-settings: 'FILL' 1;">
+                                                        info
+                                                </span>
+                                        </div>
+
+                                        <div>
+                                                <h2 class="font-h3 text-xl text-on-surface mb-1">Antes de adoptar</h2>
+                                                <p class="font-body-md text-on-surface-variant text-sm md:text-base">
+                                                        Debes conocer estos requisitos de adopción para asegurar el
+                                                        mejor hogar posible para nuestros animales.
+                                                </p>
+                                        </div>
+                                </div>
+
+                                <button
+                                        class="w-full md:w-auto shrink-0 px-8 py-3 bg-primary text-on-primary font-label-sm text-label-sm rounded-full hover:shadow-md hover:scale-[1.02] transition-all">
+                                        Ver requisitos
+                                </button>
+                        </div>
                         <!-- Filters -->
                         <div
                                 class="flex flex-col md:flex-row items-center justify-between mb-lg gap-md bg-surface-container-lowest p-md rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.02)]">
@@ -239,219 +265,225 @@
                                         </button>
                                 </div>
                         </div>
-                        <!-- Animals Grid -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter">
-                                <!-- Animal Card 1 -->
+                        <div
+                                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xxl:grid-cols-4 gap-6 p-4">
+
                                 <article
-                                        class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group cursor-pointer flex flex-col h-full">
-                                        <div class="relative h-64 overflow-hidden">
+                                        class="w-full max-w-sm mx-auto bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group flex flex-col h-[32rem]">
+                                        <div class="relative h-60 shrink-0 overflow-hidden">
                                                 <img alt="Dog"
                                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                                        data-alt="close-up portrait of a happy golden retriever dog outdoors in a sunny park with soft blurred green background"
+                                                        data-alt="close-up portrait of a happy golden retriever dog outdoors"
                                                         src="https://www.catalunyaplants.com/wp-content/uploads/2015/01/golden-retriever.jpg" />
-                                                <div
-                                                        class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-sm p-2 rounded-full shadow-sm">
+                                                <button class="absolute top-1/2 right-4 -translate-y-1/2 bg-surface-container-lowest/90 backdrop-blur-sm p-2 rounded-full shadow-sm hover:scale-105 transition-all cursor-pointer flex items-center justify-center z-10"
+                                                        aria-label="Siguiente imagen">
                                                         <span class="material-symbols-outlined text-outline hover:text-tertiary transition-colors"
-                                                                data-icon="favorite" data-weight="fill"
-                                                                style="font-variation-settings: 'FILL' 0;">favorite</span>
-                                                </div>
+                                                                style="font-variation-settings: 'FILL' 0;">arrow_forward_ios</span>
+                                                </button>
                                         </div>
                                         <div class="p-md flex flex-col flex-grow">
-                                                <div class="flex justify-between items-start mb-sm">
+                                                <div class="flex justify-between items-start mb-sm shrink-0">
                                                         <h3 class="font-h3 text-h3 text-on-surface">Luna</h3>
                                                         <span
                                                                 class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-sm text-[12px]">Cachorro</span>
                                                 </div>
                                                 <p
-                                                        class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">
-                                                        Golden Retriever Mix • Hembra • 6 meses</p>
-                                                <div class="flex flex-wrap gap-2 mb-md">
-                                                        <span
-                                                                class="bg-surface-container px-3 py-1 rounded-full text-on-surface-variant font-label-sm text-[12px]">Juguetona</span>
-                                                        <span
-                                                                class="bg-surface-container px-3 py-1 rounded-full text-on-surface-variant font-label-sm text-[12px]">Sociable</span>
-                                                </div>
+                                                        class="font-body-md text-body-md text-on-surface-variant mb-2 shrink-0">
+                                                        Golden Retriever Mix • Hembra • 6 meses
+                                                </p>
+                                                <p
+                                                        class="font-body-sm text-sm text-on-surface-variant mx-auto line-clamp-4 overflow-hidden">
+                                                        Luna es una perrita muy dulce y enérgica. Le encanta correr por
+                                                        el parque, jugar con la pelota y recibir muchos mimos. Es ideal
+                                                        para una familia activa que disfrute de los paseos largos.
+                                                </p>
                                                 <button
-                                                        class="w-full py-3 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors">Conocer
-                                                        a Luna</button>
+                                                        class="w-3/4 mx-auto mt-auto py-3 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors shrink-0">
+                                                        Conocer a Luna
+                                                </button>
                                         </div>
                                 </article>
-                                <!-- Animal Card 2 -->
+
                                 <article
-                                        class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group cursor-pointer flex flex-col h-full">
-                                        <div class="relative h-64 overflow-hidden">
+                                        class="w-full max-w-sm mx-auto bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group flex flex-col h-[32rem]">
+                                        <div class="relative h-60 shrink-0 overflow-hidden">
                                                 <img alt="Cat"
                                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                                        data-alt="cute orange tabby cat looking intently at camera sitting on a soft grey blanket with warm natural lighting"
+                                                        data-alt="cute orange tabby cat"
                                                         src="https://assets.elanco.com/8e0bf1c2-1ae4-001f-9257-f2be3c683fb1/f1787514-7f19-4732-88e7-c2842b8cbf61/ron%20%282%29.jpg?w=1920&q=75&auto=format" />
-                                                <div
-                                                        class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-sm p-2 rounded-full shadow-sm">
-                                                        <span class="material-symbols-outlined text-tertiary"
-                                                                data-icon="favorite" data-weight="fill"
-                                                                style="font-variation-settings: 'FILL' 1;">favorite</span>
-                                                </div>
+                                                <button class="absolute top-1/2 right-4 -translate-y-1/2 bg-surface-container-lowest/90 backdrop-blur-sm p-2 rounded-full shadow-sm hover:scale-105 transition-all cursor-pointer flex items-center justify-center z-10"
+                                                        aria-label="Siguiente imagen">
+                                                        <span class="material-symbols-outlined text-outline hover:text-tertiary transition-colors"
+                                                                style="font-variation-settings: 'FILL' 0;">arrow_forward_ios</span>
+                                                </button>
                                         </div>
                                         <div class="p-md flex flex-col flex-grow">
-                                                <div class="flex justify-between items-start mb-sm">
+                                                <div class="flex justify-between items-start mb-sm shrink-0">
                                                         <h3 class="font-h3 text-h3 text-on-surface">Simba</h3>
                                                         <span
                                                                 class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-[12px]">Adulto</span>
                                                 </div>
                                                 <p
-                                                        class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">
-                                                        Mestizo • Macho • 3 años</p>
-                                                <div class="flex flex-wrap gap-2 mb-md">
-                                                        <span
-                                                                class="bg-surface-container px-3 py-1 rounded-full text-on-surface-variant font-label-sm text-[12px]">Tranquilo</span>
-                                                        <span
-                                                                class="bg-surface-container px-3 py-1 rounded-full text-on-surface-variant font-label-sm text-[12px]">Independiente</span>
-                                                </div>
+                                                        class="font-body-md text-body-md text-on-surface-variant mb-2 shrink-0">
+                                                        Mestizo • Macho • 3 años
+                                                </p>
+                                                <p
+                                                        class="font-body-sm text-sm text-on-surface-variant mx-auto line-clamp-4 overflow-hidden">
+                                                        Simba es el rey de las siestas al sol. Es un gato muy tranquilo
+                                                        y observador. Prefiere la tranquilidad del hogar y disfruta de
+                                                        la compañía en silencio.
+                                                </p>
                                                 <button
-                                                        class="w-full py-3 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors">Conocer
-                                                        a Simba</button>
+                                                        class="w-3/4 mx-auto mt-auto py-3 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors shrink-0">
+                                                        Conocer a Simba
+                                                </button>
                                         </div>
                                 </article>
-                                <!-- Animal Card 3 -->
+
                                 <article
-                                        class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group cursor-pointer flex flex-col h-full">
-                                        <div class="relative h-64 overflow-hidden">
+                                        class="w-full max-w-sm mx-auto bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group flex flex-col h-[32rem]">
+                                        <div class="relative h-60 shrink-0 overflow-hidden">
                                                 <img alt="Dog"
                                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                                        data-alt="attentive german shepherd mix dog sitting on grass looking sideways with soft morning sunlight catching its fur"
+                                                        data-alt="attentive german shepherd mix dog"
                                                         src="https://www.publicdomainpictures.net/pictures/380000/velka/hund-mix-schaferhund-niedlich.jpg" />
-                                                <div
-                                                        class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-sm p-2 rounded-full shadow-sm">
+                                                <button class="absolute top-1/2 right-4 -translate-y-1/2 bg-surface-container-lowest/90 backdrop-blur-sm p-2 rounded-full shadow-sm hover:scale-105 transition-all cursor-pointer flex items-center justify-center z-10"
+                                                        aria-label="Siguiente imagen">
                                                         <span class="material-symbols-outlined text-outline hover:text-tertiary transition-colors"
-                                                                data-icon="favorite" data-weight="fill"
-                                                                style="font-variation-settings: 'FILL' 0;">favorite</span>
-                                                </div>
+                                                                style="font-variation-settings: 'FILL' 0;">arrow_forward_ios</span>
+                                                </button>
                                         </div>
                                         <div class="p-md flex flex-col flex-grow">
-                                                <div class="flex justify-between items-start mb-sm">
+                                                <div class="flex justify-between items-start mb-sm shrink-0">
                                                         <h3 class="font-h3 text-h3 text-on-surface">Max</h3>
                                                         <span
                                                                 class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-[12px]">Adulto</span>
                                                 </div>
                                                 <p
-                                                        class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">
-                                                        Pastor Mix • Macho • 4 años</p>
-                                                <div class="flex flex-wrap gap-2 mb-md">
-                                                        <span
-                                                                class="bg-surface-container px-3 py-1 rounded-full text-on-surface-variant font-label-sm text-[12px]">Protector</span>
-                                                        <span
-                                                                class="bg-surface-container px-3 py-1 rounded-full text-on-surface-variant font-label-sm text-[12px]">Activo</span>
-                                                </div>
+                                                        class="font-body-md text-body-md text-on-surface-variant mb-2 shrink-0">
+                                                        Pastor Mix • Macho • 4 años
+                                                </p>
+                                                <p
+                                                        class="font-body-sm text-sm text-on-surface-variant mx-auto line-clamp-4 overflow-hidden">
+                                                        Max es leal y muy inteligente. Necesita espacio para correr y le
+                                                        encanta aprender trucos nuevos. Será un gran compañero para
+                                                        alguien con experiencia previa.
+                                                </p>
                                                 <button
-                                                        class="w-full py-3 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors">Conocer
-                                                        a Max</button>
+                                                        class="w-3/4 mx-auto mt-auto py-3 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors shrink-0">
+                                                        Conocer a Max
+                                                </button>
                                         </div>
                                 </article>
-                                <!-- Animal Card 4 -->
+
                                 <article
-                                        class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group cursor-pointer flex flex-col h-full">
-                                        <div class="relative h-64 overflow-hidden">
+                                        class="w-full max-w-sm mx-auto bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group flex flex-col h-[32rem]">
+                                        <div class="relative h-60 shrink-0 overflow-hidden">
                                                 <img alt="Cat"
                                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                                        data-alt="sleek black cat lying on a wooden floor illuminated by a patch of bright sunlight indoors"
+                                                        data-alt="sleek black cat lying on a wooden floor"
                                                         src="https://static.wikia.nocookie.net/gatopedia/images/4/44/Gatonegro.jpg/revision/latest/scale-to-width-down/268?cb=20120325030017&path-prefix=es" />
-                                                <div
-                                                        class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-sm p-2 rounded-full shadow-sm">
+                                                <button class="absolute top-1/2 right-4 -translate-y-1/2 bg-surface-container-lowest/90 backdrop-blur-sm p-2 rounded-full shadow-sm hover:scale-105 transition-all cursor-pointer flex items-center justify-center z-10"
+                                                        aria-label="Siguiente imagen">
                                                         <span class="material-symbols-outlined text-outline hover:text-tertiary transition-colors"
-                                                                data-icon="favorite" data-weight="fill"
-                                                                style="font-variation-settings: 'FILL' 0;">favorite</span>
-                                                </div>
+                                                                style="font-variation-settings: 'FILL' 0;">arrow_forward_ios</span>
+                                                </button>
                                         </div>
                                         <div class="p-md flex flex-col flex-grow">
-                                                <div class="flex justify-between items-start mb-sm">
+                                                <div class="flex justify-between items-start mb-sm shrink-0">
                                                         <h3 class="font-h3 text-h3 text-on-surface">Sombra</h3>
                                                         <span
                                                                 class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full font-label-sm text-[12px]">Senior</span>
                                                 </div>
                                                 <p
-                                                        class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">
-                                                        Europeo • Hembra • 8 años</p>
-                                                <div class="flex flex-wrap gap-2 mb-md">
-                                                        <span
-                                                                class="bg-surface-container px-3 py-1 rounded-full text-on-surface-variant font-label-sm text-[12px]">Cariñosa</span>
-                                                        <span
-                                                                class="bg-surface-container px-3 py-1 rounded-full text-on-surface-variant font-label-sm text-[12px]">Hogareña</span>
-                                                </div>
+                                                        class="font-body-md text-body-md text-on-surface-variant mb-2 shrink-0">
+                                                        Europeo • Hembra • 8 años
+                                                </p>
+                                                <p
+                                                        class="font-body-sm text-sm text-on-surface-variant mx-auto line-clamp-4 overflow-hidden">
+                                                        Sombra busca un lugar tranquilo donde pasar sus días. Es
+                                                        sumamente cariñosa y agradecida, ideal para hacer compañía
+                                                        mientras lees o miras televisión.
+                                                </p>
                                                 <button
-                                                        class="w-full py-3 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors">Conocer
-                                                        a Sombra</button>
+                                                        class="w-3/4 mx-auto mt-auto py-3 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors shrink-0">
+                                                        Conocer a Sombra
+                                                </button>
                                         </div>
                                 </article>
-                                <!-- Animal Card 5 -->
+
                                 <article
-                                        class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group cursor-pointer flex flex-col h-full">
-                                        <div class="relative h-64 overflow-hidden">
+                                        class="w-full max-w-sm mx-auto bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group flex flex-col h-[32rem]">
+                                        <div class="relative h-60 shrink-0 overflow-hidden">
                                                 <img alt="Dog"
                                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                                        data-alt="small fluffy white terrier dog running happily across a grassy field on a clear day"
+                                                        data-alt="small fluffy white terrier dog"
                                                         src="https://preview.redd.it/any-idea-what-kind-of-terrier-mix-this-might-be-v0-tobk343grk7f1.jpeg?width=1080&crop=smart&auto=webp&s=e432fc9e2c3fd48875419b43a6347ecaa4fb74a8" />
-                                                <div
-                                                        class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-sm p-2 rounded-full shadow-sm">
+                                                <button class="absolute top-1/2 right-4 -translate-y-1/2 bg-surface-container-lowest/90 backdrop-blur-sm p-2 rounded-full shadow-sm hover:scale-105 transition-all cursor-pointer flex items-center justify-center z-10"
+                                                        aria-label="Siguiente imagen">
                                                         <span class="material-symbols-outlined text-outline hover:text-tertiary transition-colors"
-                                                                data-icon="favorite" data-weight="fill"
-                                                                style="font-variation-settings: 'FILL' 0;">favorite</span>
-                                                </div>
+                                                                style="font-variation-settings: 'FILL' 0;">arrow_forward_ios</span>
+                                                </button>
                                         </div>
                                         <div class="p-md flex flex-col flex-grow">
-                                                <div class="flex justify-between items-start mb-sm">
+                                                <div class="flex justify-between items-start mb-sm shrink-0">
                                                         <h3 class="font-h3 text-h3 text-on-surface">Pelusa</h3>
                                                         <span
                                                                 class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-sm text-[12px]">Cachorro</span>
                                                 </div>
                                                 <p
-                                                        class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">
-                                                        Terrier Mix • Hembra • 8 meses</p>
-                                                <div class="flex flex-wrap gap-2 mb-md">
-                                                        <span
-                                                                class="bg-surface-container px-3 py-1 rounded-full text-on-surface-variant font-label-sm text-[12px]">Muy
-                                                                Activa</span>
-                                                        <span
-                                                                class="bg-surface-container px-3 py-1 rounded-full text-on-surface-variant font-label-sm text-[12px]">Curiosa</span>
-                                                </div>
+                                                        class="font-body-md text-body-md text-on-surface-variant mb-2 shrink-0">
+                                                        Terrier Mix • Hembra • 8 meses
+                                                </p>
+                                                <p
+                                                        class="font-body-sm text-sm text-on-surface-variant mx-auto line-clamp-4 overflow-hidden">
+                                                        Un pequeño torbellino de amor. Pelusa es curiosa, siempre
+                                                        dispuesta a explorar cada rincón. Se lleva bien con otros perros
+                                                        de su tamaño.
+                                                </p>
                                                 <button
-                                                        class="w-full py-3 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors">Conocer
-                                                        a Pelusa</button>
+                                                        class="w-3/4 mx-auto mt-auto py-3 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors shrink-0">
+                                                        Conocer a Pelusa
+                                                </button>
                                         </div>
                                 </article>
-                                <!-- Animal Card 6 -->
+
                                 <article
-                                        class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group cursor-pointer flex flex-col h-full">
-                                        <div class="relative h-64 overflow-hidden">
+                                        class="w-full max-w-sm mx-auto bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_10px_30px_rgba(0,0,0,0.08)] transition-all duration-300 group flex flex-col h-[32rem]">
+                                        <div class="relative h-60 shrink-0 overflow-hidden">
                                                 <img alt="Cat"
                                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                                        data-alt="fluffy calico cat sleeping peacefully curled up in a woven basket bathed in warm afternoon sunlight"
+                                                        data-alt="fluffy calico cat sleeping"
                                                         src="https://www.purina.es/sites/default/files/styles/ttt_image_original/public/2025-12/calito-portada-1.webp?itok=evrLBTLm" />
-                                                <div
-                                                        class="absolute top-4 right-4 bg-surface-container-lowest/90 backdrop-blur-sm p-2 rounded-full shadow-sm">
+                                                <button class="absolute top-1/2 right-4 -translate-y-1/2 bg-surface-container-lowest/90 backdrop-blur-sm p-2 rounded-full shadow-sm hover:scale-105 transition-all cursor-pointer flex items-center justify-center z-10"
+                                                        aria-label="Siguiente imagen">
                                                         <span class="material-symbols-outlined text-outline hover:text-tertiary transition-colors"
-                                                                data-icon="favorite" data-weight="fill"
-                                                                style="font-variation-settings: 'FILL' 0;">favorite</span>
-                                                </div>
+                                                                style="font-variation-settings: 'FILL' 0;">arrow_forward_ios</span>
+                                                </button>
                                         </div>
                                         <div class="p-md flex flex-col flex-grow">
-                                                <div class="flex justify-between items-start mb-sm">
+                                                <div class="flex justify-between items-start mb-sm shrink-0">
                                                         <h3 class="font-h3 text-h3 text-on-surface">Mila</h3>
                                                         <span
                                                                 class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-[12px]">Adulto</span>
                                                 </div>
                                                 <p
-                                                        class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">
-                                                        Calicó • Hembra • 2 años</p>
-                                                <div class="flex flex-wrap gap-2 mb-md">
-                                                        <span
-                                                                class="bg-surface-container px-3 py-1 rounded-full text-on-surface-variant font-label-sm text-[12px]">Dormilona</span>
-                                                        <span
-                                                                class="bg-surface-container px-3 py-1 rounded-full text-on-surface-variant font-label-sm text-[12px]">Dulce</span>
-                                                </div>
+                                                        class="font-body-md text-body-md text-on-surface-variant mb-2 shrink-0">
+                                                        Calicó • Hembra • 2 años
+                                                </p>
+                                                <p
+                                                        class="font-body-sm text-sm text-on-surface-variant mx-auto line-clamp-4 overflow-hidden">
+                                                        Mila es pura dulzura. Su pasatiempo favorito es amasarte
+                                                        mientras ronronea fuerte. Busca un hogar seguro donde no haya
+                                                        otros animales muy escandalosos.
+                                                </p>
                                                 <button
-                                                        class="w-full py-3 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors">Conocer
-                                                        a Mila</button>
+                                                        class="w-3/4 mx-auto mt-auto py-3 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors shrink-0">
+                                                        Conocer a Mila
+                                                </button>
                                         </div>
                                 </article>
+
                         </div>
                         <!-- Pagination -->
                         <div class="mt-xl flex justify-center gap-2">
