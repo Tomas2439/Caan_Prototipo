@@ -42,23 +42,19 @@
 </head>
 
 <body class="bg-background text-on-background font-body-md antialiased pt-20">
-    <!-- TopNavBar Component from JSON -->
     <nav
         class="bg-white/95 dark:bg-stone-950/95 backdrop-blur-md fixed top-0 w-full z-50 border-b border-stone-100 dark:border-stone-800 shadow-[0_4px_30px_rgba(0,0,0,0.05)]">
         <div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
-            <!-- Brand Logo -->
             <a class="text-2xl font-extrabold tracking-tighter text-emerald-900 dark:text-emerald-50 pt-10"
                 href="./index.html">
                 <img src="./CaanLogo.png" alt="Logo CAAN" class="w-32 h-auto" />
             </a>
-            <!-- Navigation Links -->
             <div
                 class="hidden md:flex items-center space-x-6 font-sans text-sm font-medium tracking-tight text-emerald-800 dark:text-emerald-400">
                 <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
                     href="./index.html">Inicio</a>
                 <a class="text-emerald-700 dark:text-emerald-300 border-b-2 border-emerald-700 pb-1 px-3 py-2"
-                    href="#">Sobre Nosotros</a> <!-- Semantic Intent Match -->
-                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
+                    href="#">Sobre Nosotros</a> <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
                     href="./adopciones.html">Adopciones</a>
                 <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
                     href="./noticias.html">Noticias</a>
@@ -69,7 +65,6 @@
                 <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
                     href="./contacto.html">Contacto</a>
             </div>
-            <!-- Trailing Action -->
             <a href="./donaciones.html">
                 <button
                     class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded-full hover:bg-primary-container active:scale-95 transition-transform duration-200">
@@ -91,13 +86,11 @@
         </p>
     </div>
 
-    <!-- Contenedor de Imagen -->
     <div class="w-full md:w-1/2 relative">
-        <!-- Detalle decorativo sutil detrás de la foto -->
         <div class="absolute inset-0 bg-green-200/60 rounded-xl transform translate-x-3 translate-y-3 -z-10"></div>
         
         <img 
-            src="images.jpeg" 
+            src="cartel.jpeg" 
             alt="" 
             class="w-full h-auto object-cover aspect-video sm:aspect-square md:aspect-[4/3] rounded-xl shadow-sm border-[6px] border-white relative z-10"
         >
@@ -107,19 +100,20 @@
 
 <div class="flex flex-col md:flex-row items-center gap-10 p-8 md:p-12 bg-green-50/50 rounded-2xl max-w-6xl mx-auto"> 
     
-    <!-- Contenedor de Imagen (Ahora primero) -->
-    <div class="w-full md:w-1/2 relative">
-        <!-- Detalle decorativo sutil detrás de la foto -->
-        <div class="absolute inset-0 bg-green-200/60 rounded-xl transform -translate-x-3 translate-y-3 -z-10"></div>
-        
-        <img 
-            src="images.jpeg" 
-            alt="" 
-            class="w-full h-auto object-cover aspect-video sm:aspect-square md:aspect-[4/3] rounded-xl shadow-sm border-[6px] border-white relative z-10"
-        >
+   <div class="relative w-full max-w-[450px] mx-auto min-h-[380px] mt-8 mb-12">
+    <div class="absolute top-0 left-4 w-[260px] group z-10">
+        <div class="bg-[#fcfbf9] p-3 pb-8 shadow-xl border border-stone-200 transform rotate-3 transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1">
+            <img src="animal4.jpeg" alt="Actividad en el refugio 1" class="w-full aspect-square object-cover sepia-[0.15] contrast-125 brightness-95">
+        </div>
     </div>
 
-    <!-- Contenedor de Texto (Ahora segundo) -->
+    <div class="absolute top-12 right-4 w-[260px] group z-20">
+        <div class="bg-[#fcfbf9] p-3 pb-8 shadow-2xl border border-stone-200 transform -rotate-3 transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-1">
+            <img src="animal2.jpeg" alt="Actividad en el refugio 2" class="w-full aspect-square object-cover sepia-[0.15] contrast-125 brightness-95">
+        </div>
+    </div>
+</div>
+
     <div class="w-full md:w-1/2">
         <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4 capitalize">
             historia
@@ -140,35 +134,20 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 mb-14 relative z-10 px-4">
         
         <div class="relative group mx-auto w-full max-w-[320px]">
-            <div class="absolute -top-1 -left-1 w-6 h-6 border-t-[5px] border-l-[5px] border-walnut z-20"></div>
-            <div class="absolute -top-1 -right-1 w-6 h-6 border-t-[5px] border-r-[5px] border-walnut z-20"></div>
-            <div class="absolute -bottom-1 -left-1 w-6 h-6 border-b-[5px] border-l-[5px] border-walnut z-20"></div>
-            <div class="absolute -bottom-1 -right-1 w-6 h-6 border-b-[5px] border-r-[5px] border-walnut z-20"></div>
-
             <div class="bg-[#fcfbf9] p-3 shadow-md transform transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-1">
-                <img src="tu_imagen_predio_1.jpg" alt="Entrada al refugio" class="w-full aspect-square object-cover grayscale sepia-[.3] contrast-125 border border-stone-200">
+                <img src="im1.jpeg" alt="Entrada al refugio" class="w-full aspect-square object-cover contrast-125 border border-stone-200">
             </div>
         </div>
 
         <div class="relative group mx-auto w-full max-w-[320px] mt-4 md:mt-0">
-            <div class="absolute -top-1 -left-1 w-6 h-6 border-t-[5px] border-l-[5px] border-walnut z-20"></div>
-            <div class="absolute -top-1 -right-1 w-6 h-6 border-t-[5px] border-r-[5px] border-walnut z-20"></div>
-            <div class="absolute -bottom-1 -left-1 w-6 h-6 border-b-[5px] border-l-[5px] border-walnut z-20"></div>
-            <div class="absolute -bottom-1 -right-1 w-6 h-6 border-b-[5px] border-r-[5px] border-walnut z-20"></div>
-
             <div class="bg-[#fcfbf9] p-3 shadow-md transform transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1">
-                <img src="tu_imagen_predio_2.jpg" alt="Zonas de recreo" class="w-full aspect-square object-cover grayscale sepia-[.3] contrast-125 border border-stone-200">
+                <img src="im2.jpeg" alt="Zonas de recreo" class="w-full aspect-square object-cover contrast-125 border border-stone-200">
             </div>
         </div>
 
         <div class="relative group mx-auto w-full max-w-[320px] mt-4 md:mt-0">
-            <div class="absolute -top-1 -left-1 w-6 h-6 border-t-[5px] border-l-[5px] border-walnut z-20"></div>
-            <div class="absolute -top-1 -right-1 w-6 h-6 border-t-[5px] border-r-[5px] border-walnut z-20"></div>
-            <div class="absolute -bottom-1 -left-1 w-6 h-6 border-b-[5px] border-l-[5px] border-walnut z-20"></div>
-            <div class="absolute -bottom-1 -right-1 w-6 h-6 border-b-[5px] border-r-[5px] border-walnut z-20"></div>
-
             <div class="bg-[#fcfbf9] p-3 shadow-md transform transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-1">
-                <img src="tu_imagen_predio_3.jpg" alt="Caniles limpios y seguros" class="w-full aspect-square object-cover grayscale sepia-[.3] contrast-125 border border-stone-200">
+                <img src="mi3.jpeg" alt="Caniles limpios y seguros" class="w-full aspect-square object-cover contrast-125 border border-stone-200">
             </div>
         </div>
 
@@ -192,15 +171,12 @@
     
 
     
-    <!-- Footer Component from JSON -->
     <footer class="bg-stone-50 dark:bg-stone-900 border-t border-stone-200 dark:border-stone-800 w-full py-12">
         <div class="max-w-[1280px] mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Brand -->
             <div class="space-y-4">
                 <p class="font-bold text-lg text-emerald-900 dark:text-emerald-50">CAAN</p>
                 <p class="font-sans text-sm text-stone-500">© 2024 CAAN. Todos los derechos reservados.</p>
             </div>
-            <!-- Links -->
             <div class="flex flex-col space-y-2">
                 <a class="font-sans text-sm text-stone-500 hover:text-emerald-600 hover:underline transition-all opacity-80 hover:opacity-100"
                     href="#">Privacidad</a>
@@ -211,7 +187,6 @@
                 <a class="font-sans text-sm text-stone-500 hover:text-emerald-600 hover:underline transition-all opacity-80 hover:opacity-100"
                     href="#">Prensa</a>
             </div>
-            <!-- Additional Contact/Social (Implicit from layout logic) -->
             <div class="flex flex-col space-y-4 items-start md:items-end">
                 <button
                     class="bg-primary-container text-on-primary-container font-label-sm text-label-sm px-6 py-2 rounded-full hover:bg-primary transition-colors hover:text-on-primary">
