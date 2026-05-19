@@ -18,7 +18,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -34,6 +34,7 @@
                         "hunter-green": "#3b5e3bff",
                         "dark-emerald": "#2c694eff",
                         "powder-blue": "#9bb4cbff"
+                    }
                 }
             }
         }
@@ -63,7 +64,7 @@
             <!-- Menú de Escritorio (Desktop) -->
             <div
                 class="hidden md:flex items-center space-x-6 font-sans text-sm font-medium tracking-tight text-emerald-800 dark:text-emerald-400">
-                <a class="text-emerald-700 dark:text-emerald-300 border-b-2 border-emerald-700 pb-1 px-3 py-2"
+                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
                     href="./index.html">Inicio</a>
                 <a class="text-emerald-700 dark:text-emerald-300 border-b-2 border-emerald-700 pb-1 px-3 py-2"
                     href="#">Sobre Nosotros</a>
@@ -125,102 +126,121 @@
     </nav>
 
     <main>
-    
-    <div class="flex flex-col md:flex-row items-center gap-10 p-8 md:p-12 bg-green-50/50 rounded-2xl max-w-6xl mx-auto"> 
-    <div class="w-full md:w-1/2">
-        <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4 capitalize">
-            historia
-        </h2>
-        <p class="text-green-700/80 leading-relaxed text-lg font-medium">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium non, expedita ratione laudantium suscipit minus nesciunt facilis cupiditate error iusto eos, earum doloremque, tenetur quisquam veritatis placeat iure modi alias.
-        </p>
-    </div>
 
-    <div class="w-full md:w-1/2 relative">
-        <div class="absolute inset-0 bg-green-200/60 rounded-xl transform translate-x-3 translate-y-3 -z-10"></div>
-        
-        <img 
-            src="cartel.jpeg" 
-            alt="" 
-            class="w-full h-auto object-cover aspect-video sm:aspect-square md:aspect-[4/3] rounded-xl shadow-sm border-[6px] border-white relative z-10"
-        >
-    </div>
-    
-</div>
-
-<div class="flex flex-col md:flex-row items-center gap-10 p-8 md:p-12 bg-green-50/50 rounded-2xl max-w-6xl mx-auto"> 
-    
-   <div class="relative w-full max-w-[450px] mx-auto min-h-[380px] mt-8 mb-12">
-    <div class="absolute top-0 left-4 w-[260px] group z-10">
-        <div class="bg-[#fcfbf9] p-3 pb-8 shadow-xl border border-stone-200 transform rotate-3 transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1">
-            <img src="animal4.jpeg" alt="Actividad en el refugio 1" class="w-full aspect-square object-cover sepia-[0.15] contrast-125 brightness-95">
-        </div>
-    </div>
-
-    <div class="absolute top-12 right-4 w-[260px] group z-20">
-        <div class="bg-[#fcfbf9] p-3 pb-8 shadow-2xl border border-stone-200 transform -rotate-3 transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-1">
-            <img src="animal2.jpeg" alt="Actividad en el refugio 2" class="w-full aspect-square object-cover sepia-[0.15] contrast-125 brightness-95">
-        </div>
-    </div>
-</div>
-
-    <div class="w-full md:w-1/2">
-        <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4 capitalize">
-            historia
-        </h2>
-        <p class="text-green-700/80 leading-relaxed text-lg font-medium">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium non, expedita ratione laudantium suscipit minus nesciunt facilis cupiditate error iusto eos, earum doloremque, tenetur quisquam veritatis placeat iure modi alias.
-        </p>
-    </div>
-    
-</div>
-
-<section class="max-w-[1280px] mx-auto px-8 py-16 mt-12 bg-[#f4f1ea] dark:bg-stone-900 rounded-sm shadow-inner relative overflow-hidden border border-stone-200/50">
-    
-    <h2 class="text-center text-3xl md:text-5xl font-bold text-walnut dark:text-pale-oak mb-14 tracking-widest uppercase font-serif">
-        Este es nuestro predio
-    </h2>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 mb-14 relative z-10 px-4">
-        
-        <div class="relative group mx-auto w-full max-w-[320px]">
-            <div class="bg-[#fcfbf9] p-3 shadow-md transform transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-1">
-                <img src="im1.jpeg" alt="Entrada al refugio" class="w-full aspect-square object-cover contrast-125 border border-stone-200">
+        <div
+            class="flex flex-col md:flex-row items-center gap-10 p-8 md:p-12 bg-green-50/50 rounded-2xl max-w-6xl mx-auto">
+            <div class="w-full md:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4 capitalize">
+                    historia
+                </h2>
+                <p class="text-green-700/80 leading-relaxed text-lg font-medium">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium non, expedita ratione
+                    laudantium suscipit minus nesciunt facilis cupiditate error iusto eos, earum doloremque, tenetur
+                    quisquam veritatis placeat iure modi alias.
+                </p>
             </div>
-        </div>
 
-        <div class="relative group mx-auto w-full max-w-[320px] mt-4 md:mt-0">
-            <div class="bg-[#fcfbf9] p-3 shadow-md transform transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1">
-                <img src="im2.jpeg" alt="Zonas de recreo" class="w-full aspect-square object-cover contrast-125 border border-stone-200">
+            <div class="w-full md:w-1/2 relative">
+                <div class="absolute inset-0 bg-green-200/60 rounded-xl transform translate-x-3 translate-y-3 -z-10">
+                </div>
+
+                <img src="cartel.jpeg" alt=""
+                    class="w-full h-auto object-cover aspect-video sm:aspect-square md:aspect-[4/3] rounded-xl shadow-sm border-[6px] border-white relative z-10">
             </div>
+
         </div>
 
-        <div class="relative group mx-auto w-full max-w-[320px] mt-4 md:mt-0">
-            <div class="bg-[#fcfbf9] p-3 shadow-md transform transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-1">
-                <img src="mi3.jpeg" alt="Caniles limpios y seguros" class="w-full aspect-square object-cover contrast-125 border border-stone-200">
+        <div
+            class="flex flex-col md:flex-row items-center gap-10 p-8 md:p-12 bg-green-50/50 rounded-2xl max-w-6xl mx-auto">
+
+            <div class="relative w-full max-w-[450px] mx-auto min-h-[380px] mt-8 mb-12">
+                <div class="absolute top-0 left-4 w-[260px] group z-10">
+                    <div
+                        class="bg-[#fcfbf9] p-3 pb-8 shadow-xl border border-stone-200 transform rotate-3 transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1">
+                        <img src="animal4.jpeg" alt="Actividad en el refugio 1"
+                            class="w-full aspect-square object-cover sepia-[0.15] contrast-125 brightness-95">
+                    </div>
+                </div>
+
+                <div class="absolute top-12 right-4 w-[260px] group z-20">
+                    <div
+                        class="bg-[#fcfbf9] p-3 pb-8 shadow-2xl border border-stone-200 transform -rotate-3 transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-1">
+                        <img src="animal2.jpeg" alt="Actividad en el refugio 2"
+                            class="w-full aspect-square object-cover sepia-[0.15] contrast-125 brightness-95">
+                    </div>
+                </div>
             </div>
+
+            <div class="w-full md:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4 capitalize">
+                    historia
+                </h2>
+                <p class="text-green-700/80 leading-relaxed text-lg font-medium">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium non, expedita ratione
+                    laudantium suscipit minus nesciunt facilis cupiditate error iusto eos, earum doloremque, tenetur
+                    quisquam veritatis placeat iure modi alias.
+                </p>
+            </div>
+
         </div>
 
-    </div>
+        <section
+            class="max-w-[1280px] mx-auto px-8 py-16 mt-12 bg-[#f4f1ea] dark:bg-stone-900 rounded-sm shadow-inner relative overflow-hidden border border-stone-200/50">
 
-    <div class="max-w-4xl mx-auto text-center relative z-10">
-        <p class="text-stone-800 dark:text-stone-300 text-lg md:text-xl leading-relaxed font-medium font-serif">
-            Nuestro predio es el alma de nuestra misión. Un refugio seguro y lleno de amor para cientos de animales que esperan un hogar definitivo. Desde las amplias zonas de recreo hasta los recintos individuales diseñados para el bienestar de cada residente, cada espacio está pensado para su felicidad y sanación. Gracias a vuestro apoyo, este espacio es una realidad llena de esperanza.
-        </p>
-        
-        <div class="flex justify-center gap-6 mt-8 opacity-30 text-walnut">
-            <span class="material-symbols-outlined text-4xl transform -rotate-12">pets</span>
-            <span class="material-symbols-outlined text-4xl translate-y-3">pets</span>
-            <span class="material-symbols-outlined text-4xl transform rotate-12">pets</span>
-        </div>
-    </div>
-    
-</section>
+            <h2
+                class="text-center text-3xl md:text-5xl font-bold text-walnut dark:text-pale-oak mb-14 tracking-widest uppercase font-serif">
+                Este es nuestro predio
+            </h2>
 
-</main>
-    
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 mb-14 relative z-10 px-4">
 
-    
+                <div class="relative group mx-auto w-full max-w-[320px]">
+                    <div
+                        class="bg-[#fcfbf9] p-3 shadow-md transform transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-1">
+                        <img src="im1.jpeg" alt="Entrada al refugio"
+                            class="w-full aspect-square object-cover contrast-125 border border-stone-200">
+                    </div>
+                </div>
+
+                <div class="relative group mx-auto w-full max-w-[320px] mt-4 md:mt-0">
+                    <div
+                        class="bg-[#fcfbf9] p-3 shadow-md transform transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1">
+                        <img src="im2.jpeg" alt="Zonas de recreo"
+                            class="w-full aspect-square object-cover contrast-125 border border-stone-200">
+                    </div>
+                </div>
+
+                <div class="relative group mx-auto w-full max-w-[320px] mt-4 md:mt-0">
+                    <div
+                        class="bg-[#fcfbf9] p-3 shadow-md transform transition-transform duration-500 group-hover:scale-105 group-hover:-rotate-1">
+                        <img src="mi3.jpeg" alt="Caniles limpios y seguros"
+                            class="w-full aspect-square object-cover contrast-125 border border-stone-200">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="max-w-4xl mx-auto text-center relative z-10">
+                <p class="text-stone-800 dark:text-stone-300 text-lg md:text-xl leading-relaxed font-medium font-serif">
+                    Nuestro predio es el alma de nuestra misión. Un refugio seguro y lleno de amor para cientos de
+                    animales que esperan un hogar definitivo. Desde las amplias zonas de recreo hasta los recintos
+                    individuales diseñados para el bienestar de cada residente, cada espacio está pensado para su
+                    felicidad y sanación. Gracias a vuestro apoyo, este espacio es una realidad llena de esperanza.
+                </p>
+
+                <div class="flex justify-center gap-6 mt-8 opacity-30 text-walnut">
+                    <span class="material-symbols-outlined text-4xl transform -rotate-12">pets</span>
+                    <span class="material-symbols-outlined text-4xl translate-y-3">pets</span>
+                    <span class="material-symbols-outlined text-4xl transform rotate-12">pets</span>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+
     <footer class="bg-stone-50 dark:bg-stone-900 border-t border-stone-200 dark:border-stone-800 w-full py-12">
         <div class="max-w-[1280px] mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="space-y-4">
