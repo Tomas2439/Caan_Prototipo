@@ -105,6 +105,15 @@
                 }
             }
         }
+        // Script para el funcionamiento del menú
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        });
     </script>
     <style>
         .material-symbols-outlined {
@@ -114,22 +123,23 @@
 </head>
 
 <body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col pt-20">
-    <!-- TopNavBar -->
+    <!-- TopNavBar (Shared Component) -->
     <nav
         class="bg-white/95 dark:bg-stone-950/95 backdrop-blur-md fixed top-0 w-full z-50 border-b border-stone-100 dark:border-stone-800 shadow-[0_4px_30px_rgba(0,0,0,0.05)]">
-        <div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
-            <!-- Brand Logo -->
-            <a class="text-2xl font-extrabold tracking-tighter text-emerald-900 dark:text-emerald-50 pt-10"
-                href="./index.html">
-                <img src="./CaanLogo.png" alt="Logo CAAN" class="w-32 h-auto" />
+        <div class="max-w-[1280px] mx-auto flex justify-between items-center px-4 md:px-8 h-20">
+
+            <!-- Logo -->
+            <a class="flex items-center flex-shrink-0 lg:pt-14" href="./index.html">
+                <img src="./CaanLogo.png" alt="Logo CAAN" class="w-20 md:w-32 h-auto transition-all duration-300" />
             </a>
-            <!-- Navigation Links -->
+
+            <!-- Menú de Escritorio (Desktop) -->
             <div
                 class="hidden md:flex items-center space-x-6 font-sans text-sm font-medium tracking-tight text-emerald-800 dark:text-emerald-400">
                 <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
                     href="./index.html">Inicio</a>
                 <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
-                    href="./sobre_nosotros.html">Sobre Nosotros</a> <!-- Semantic Intent Match -->
+                    href="./sobre_nosotros.html">Sobre Nosotros</a>
                 <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
                     href="./adopciones.html">Adopciones</a>
                 <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
@@ -141,13 +151,49 @@
                 <a class="text-emerald-700 dark:text-emerald-300 border-b-2 border-emerald-700 pb-1 px-3 py-2"
                     href="#">Contacto</a>
             </div>
-            <!-- Trailing Action -->
-            <a href="./donaciones.html">
-                <button
-                    class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded-full hover:bg-primary-container active:scale-95 transition-transform duration-200">
-                    Donar
+
+            <!-- Botón Donar (Escritorio) y Menú Hamburguesa (Móvil) -->
+            <div class="flex items-center gap-4">
+                <a href="./donaciones.html" class="hidden md:block">
+                    <button
+                        class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded-full hover:bg-primary-container active:scale-95 transition-transform duration-200">
+                        Donar
+                    </button>
+                </a>
+
+                <!-- Botón Hamburguesa -->
+                <button id="mobile-menu-button"
+                    class="md:hidden text-stone-600 dark:text-stone-400 hover:text-emerald-600 focus:outline-none p-2">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
                 </button>
-            </a>
+            </div>
+        </div>
+
+        <!-- Menú Desplegable Móvil -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white/95 dark:bg-stone-950/95 backdrop-blur-md border-t border-stone-100 dark:border-stone-800 shadow-lg absolute w-full left-0 top-20">
+            <div
+                class="flex flex-col px-6 py-6 space-y-4 font-sans text-base font-medium tracking-tight text-stone-600 dark:text-stone-400">
+                <a class="hover:text-emerald-600 transition-colors" href="./index.html">Inicio</a>
+                <a class="hover:text-emerald-600 transition-colors" href="./sobre_nosotros.html">Sobre Nosotros</a>
+                <a class="hover:text-emerald-600 transition-colors" href="./adopciones.html">Adopciones</a>
+                <a class="hover:text-emerald-600 transition-colors" href="./noticias.html">Noticias</a>
+                <a class="hover:text-emerald-600 transition-colors" href="./faq.html">FAQ</a>
+                <a class="hover:text-emerald-600 transition-colors" href="./denuncias.html">Denuncias</a>
+                <a class="text-emerald-700 dark:text-emerald-300 font-bold" href="#">Contacto</a>
+
+                <!-- Botón Donar en versión móvil -->
+                <a href="./donaciones.html" class="pt-4 mt-2 border-t border-stone-200 dark:border-stone-800">
+                    <button
+                        class="w-full bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded-full hover:bg-primary-container active:scale-95 transition-transform duration-200">
+                        Donar
+                    </button>
+                </a>
+            </div>
         </div>
     </nav>
     <!-- Main Content -->
@@ -156,8 +202,8 @@
         <section class="w-full bg-surface-container-low py-xl px-gutter flex justify-center">
             <div class="max-w-container_max w-full text-center">
                 <h1 class="font-h1 text-h1 text-on-surface mb-md">Estamos aquí para ayudarte</h1>
-                <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">¿Tienes dudas sobre
-                    adopciones, quieres ser voluntario o necesitas reportar un caso? Contáctanos y responderemos lo
+                <p class="font-body-md text-body-md md:font-body-xl md:text-body-xl break-normal md:break-keep text-on-surface-variant text-center md:text-justify px-6 md:px-0 max-w-md md:max-w-2xl mx-auto">
+                    ¿Tienes dudas sobre adopciones, quieres ser voluntario o necesitas reportar un caso? Contáctanos y responderemos lo
                     antes posible.</p>
             </div>
         </section>
