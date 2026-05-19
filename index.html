@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Inicio - CAAN</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -103,6 +107,15 @@
                 }
             }
         }
+        // Script para el funcionamiento del menú
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('mobile-menu-button');
+            const menu = document.getElementById('mobile-menu');
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        });
     </script>
     <style>
         .material-symbols-outlined {
@@ -110,50 +123,110 @@
         }
     </style>
 </head>
-<body class="bg-background text-on-background font-body-md antialiased pt-20 flex flex-col min-h-screen">
 
-    <nav class="bg-white/95 dark:bg-stone-950/95 backdrop-blur-md fixed top-0 w-full z-50 border-b border-stone-100 dark:border-stone-800 shadow-[0_4px_30px_rgba(0,0,0,0.05)]">
-        <div class="max-w-[1280px] mx-auto flex justify-between items-center px-8 h-20">
-            <a class="text-2xl font-extrabold tracking-tighter text-emerald-900 dark:text-emerald-50 pt-10" href="./index.html">
-                <img src="./CaanLogo.png" alt="Logo CAAN" class="w-32 h-auto" />
+<body class="bg-background text-on-background font-body-md text-body-md antialiased pt-20">
+    <nav
+        class="bg-white/95 dark:bg-stone-950/95 backdrop-blur-md fixed top-0 w-full z-50 border-b border-stone-100 dark:border-stone-800 shadow-[0_4px_30px_rgba(0,0,0,0.05)]">
+        <div class="max-w-[1280px] mx-auto flex justify-between items-center px-4 md:px-8 h-20">
+
+            <!-- Logo -->
+            <a class="flex items-center flex-shrink-0 lg:pt-14"
+                href="./index.html">
+                <img src="./CaanLogo.png" alt="Logo CAAN" class="w-20 md:w-32 h-auto transition-all duration-300" />
             </a>
-            <div class="hidden md:flex items-center space-x-6 font-sans text-sm font-medium tracking-tight text-emerald-800 dark:text-emerald-400">
-                <a class="text-emerald-700 dark:text-emerald-300 border-b-2 border-emerald-700 pb-1 px-3 py-2" href="#">Inicio</a>
-                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md" href="./sobre_nosotros.html">Sobre Nosotros</a>
-                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md" href="./adopciones.html">Adopciones</a>
-                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md" href="./noticias.html">Noticias</a>
-                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md" href="./faq.html">FAQ</a>
-                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md" href="./denuncias.html">Denuncias</a>
-                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md" href="./contacto.html">Contacto</a>
+
+            <!-- Menú de Escritorio (Desktop) -->
+            <div
+                class="hidden md:flex items-center space-x-6 font-sans text-sm font-medium tracking-tight text-emerald-800 dark:text-emerald-400">
+                <a class="text-emerald-700 dark:text-emerald-300 border-b-2 border-emerald-700 pb-1 px-3 py-2"
+                    href="#">Inicio</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
+                    href="./sobre_nosotros.html">Sobre Nosotros</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
+                    href="./adopciones.html">Adopciones</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
+                    href="./noticias.html">Noticias</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
+                    href="./faq.html">FAQ</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
+                    href="./denuncias.html">Denuncias</a>
+                <a class="text-stone-600 dark:text-stone-400 hover:text-emerald-600 hover:bg-stone-50 dark:hover:bg-stone-900 transition-all duration-300 px-3 py-2 rounded-md"
+                    href="./contacto.html">Contacto</a>
             </div>
-            <a href="./donaciones.html">
-                <button class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded-full hover:bg-primary-container hover:text-on-primary-container active:scale-95 transition-all duration-200">
-                    Donar
+
+            <!-- Botón Donar (Escritorio) y Menú Hamburguesa (Móvil) -->
+            <div class="flex items-center gap-4">
+                <a href="./donaciones.html" class="hidden md:block">
+                    <button
+                        class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded-full hover:bg-primary-container active:scale-95 transition-transform duration-200">
+                        Donar
+                    </button>
+                </a>
+
+                <!-- Botón Hamburguesa -->
+                <button id="mobile-menu-button"
+                    class="md:hidden text-stone-600 dark:text-stone-400 hover:text-emerald-600 focus:outline-none p-2">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
                 </button>
-            </a>
+            </div>
+        </div>
+
+        <!-- Menú Desplegable Móvil -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white/95 dark:bg-stone-950/95 backdrop-blur-md border-t border-stone-100 dark:border-stone-800 shadow-lg absolute w-full left-0 top-20">
+            <div
+                class="flex flex-col px-6 py-6 space-y-4 font-sans text-base font-medium tracking-tight text-stone-600 dark:text-stone-400">
+                <a class="text-emerald-700 dark:text-emerald-300 font-bold" href="#">Inicio</a>
+                <a class="hover:text-emerald-600 transition-colors" href="./sobre_nosotros.html">Sobre Nosotros</a>
+                <a class="hover:text-emerald-600 transition-colors" href="./adopciones.html">Adopciones</a>
+                <a class="hover:text-emerald-600 transition-colors" href="./noticias.html">Noticias</a>
+                <a class="hover:text-emerald-600 transition-colors" href="./faq.html">FAQ</a>
+                <a class="hover:text-emerald-600 transition-colors" href="./denuncias.html">Denuncias</a>
+                <a class="hover:text-emerald-600 transition-colors" href="./contacto.html">Contacto</a>
+
+                <!-- Botón Donar en versión móvil -->
+                <a href="./donaciones.html" class="pt-4 mt-2 border-t border-stone-200 dark:border-stone-800">
+                    <button
+                        class="w-full bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded-full hover:bg-primary-container active:scale-95 transition-transform duration-200">
+                        Donar
+                    </button>
+                </a>
+            </div>
         </div>
     </nav>
 
     <main class="flex-grow w-full">
         <section class="relative bg-surface-container-low overflow-hidden">
-            <div class="max-w-container_max mx-auto px-gutter py-16 md:py-24 flex flex-col lg:flex-row items-center gap-12">
+            <div
+                class="max-w-container_max mx-auto px-gutter py-16 md:py-24 flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1 space-y-6 z-10 text-center lg:text-left">
-                    <span class="inline-block px-4 py-2 bg-primary-container text-on-primary-container font-label-sm text-label-sm rounded-full mb-2">Centro de Adopción de Animales</span>
-                    <h1 class="font-h1 text-[40px] md:text-[56px] text-on-surface leading-tight">Dale un hogar a quien más lo necesita</h1>
+                    <span
+                        class="inline-block px-4 py-2 bg-primary-container text-on-primary-container font-label-sm text-label-sm rounded-full mb-2">Centro
+                        de Adopción de Animales</span>
+                    <h1 class="font-h1 text-[40px] md:text-[56px] text-on-surface leading-tight">Dale un hogar a quien
+                        más lo necesita</h1>
                     <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto lg:mx-0">
-                        Rescatamos, rehabilitamos y buscamos familias amorosas para animales en situación de calle. Conoce a tu nuevo mejor amigo o ayúdanos a seguir cambiando vidas.
+                        Rescatamos, rehabilitamos y buscamos familias amorosas para animales en situación de calle.
+                        Conoce a tu nuevo mejor amigo o ayúdanos a seguir cambiando vidas.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
-                        <a href="./adopciones.html" class="bg-primary text-on-primary font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-primary/90 active:scale-95 transition-all shadow-sm text-center">
+                        <a href="./adopciones.html"
+                            class="bg-primary text-on-primary font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-primary/90 active:scale-95 transition-all shadow-sm text-center">
                             Adoptar ahora
                         </a>
-                        <a href="./donaciones.html" class="bg-surface-container-lowest text-on-surface border border-outline-variant font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-surface-container transition-all text-center">
+                        <a href="./donaciones.html"
+                            class="bg-surface-container-lowest text-on-surface border border-outline-variant font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-surface-container transition-all text-center">
                             Hacer una donación
                         </a>
                     </div>
                 </div>
                 <div class="flex-1 relative z-10 w-full h-[400px] md:h-[500px]">
-                    <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Perro feliz al aire libre" class="w-full h-full object-cover rounded-2xl shadow-xl" />
+                    <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Perro feliz al aire libre" class="w-full h-full object-cover rounded-2xl shadow-xl" />
                 </div>
             </div>
         </section>
@@ -161,31 +234,46 @@
         <section class="py-16 bg-surface">
             <div class="max-w-container_max mx-auto px-gutter">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <a href="../denuncias/code.html" class="group bg-error-container/20 border border-error-container/30 p-8 rounded-2xl flex flex-col items-start gap-4 hover:shadow-[0_8px_30px_rgba(186,26,26,0.1)] transition-all">
-                        <div class="w-12 h-12 bg-error-container text-on-error-container rounded-full flex items-center justify-center">
+                    <a href="../denuncias/code.html"
+                        class="group bg-error-container/20 border border-error-container/30 p-8 rounded-2xl flex flex-col items-start gap-4 hover:shadow-[0_8px_30px_rgba(186,26,26,0.1)] transition-all">
+                        <div
+                            class="w-12 h-12 bg-error-container text-on-error-container rounded-full flex items-center justify-center">
                             <span class="material-symbols-outlined text-[24px]">warning</span>
                         </div>
                         <h3 class="font-h3 text-h3 text-on-surface">Reportar Maltrato</h3>
-                        <p class="font-body-md text-body-md text-on-surface-variant flex-grow">Si eres testigo de abandono o maltrato animal, repórtalo de forma segura y confidencial.</p>
-                        <span class="text-error font-label-sm text-label-sm flex items-center gap-1 group-hover:gap-2 transition-all">Hacer denuncia <span class="material-symbols-outlined text-[18px]">arrow_forward</span></span>
+                        <p class="font-body-md text-body-md text-on-surface-variant flex-grow">Si eres testigo de
+                            abandono o maltrato animal, repórtalo de forma segura y confidencial.</p>
+                        <span
+                            class="text-error font-label-sm text-label-sm flex items-center gap-1 group-hover:gap-2 transition-all">Hacer
+                            denuncia <span class="material-symbols-outlined text-[18px]">arrow_forward</span></span>
                     </a>
 
-                    <a href="../contacto/code.html" class="group bg-tertiary-container/10 border border-tertiary-container/30 p-8 rounded-2xl flex flex-col items-start gap-4 hover:shadow-[0_8px_30px_rgba(113,54,56,0.1)] transition-all">
-                        <div class="w-12 h-12 bg-tertiary-container text-on-tertiary-container rounded-full flex items-center justify-center">
+                    <a href="../contacto/code.html"
+                        class="group bg-tertiary-container/10 border border-tertiary-container/30 p-8 rounded-2xl flex flex-col items-start gap-4 hover:shadow-[0_8px_30px_rgba(113,54,56,0.1)] transition-all">
+                        <div
+                            class="w-12 h-12 bg-tertiary-container text-on-tertiary-container rounded-full flex items-center justify-center">
                             <span class="material-symbols-outlined text-[24px]">volunteer_activism</span>
                         </div>
                         <h3 class="font-h3 text-h3 text-on-surface">Sé Voluntario</h3>
-                        <p class="font-body-md text-body-md text-on-surface-variant flex-grow">Súmate a nuestro equipo. Tu dedicación es invaluable para la recuperación de nuestros rescatados.</p>
-                        <span class="text-tertiary font-label-sm text-label-sm flex items-center gap-1 group-hover:gap-2 transition-all">Saber más <span class="material-symbols-outlined text-[18px]">arrow_forward</span></span>
+                        <p class="font-body-md text-body-md text-on-surface-variant flex-grow">Súmate a nuestro equipo.
+                            Tu dedicación es invaluable para la recuperación de nuestros rescatados.</p>
+                        <span
+                            class="text-tertiary font-label-sm text-label-sm flex items-center gap-1 group-hover:gap-2 transition-all">Saber
+                            más <span class="material-symbols-outlined text-[18px]">arrow_forward</span></span>
                     </a>
 
-                    <a href="../noticias/code.html" class="group bg-secondary-container/10 border border-secondary-container/30 p-8 rounded-2xl flex flex-col items-start gap-4 hover:shadow-[0_8px_30px_rgba(137,81,0,0.1)] transition-all">
-                        <div class="w-12 h-12 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center">
+                    <a href="../noticias/code.html"
+                        class="group bg-secondary-container/10 border border-secondary-container/30 p-8 rounded-2xl flex flex-col items-start gap-4 hover:shadow-[0_8px_30px_rgba(137,81,0,0.1)] transition-all">
+                        <div
+                            class="w-12 h-12 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center">
                             <span class="material-symbols-outlined text-[24px]">newspaper</span>
                         </div>
                         <h3 class="font-h3 text-h3 text-on-surface">Últimas Noticias</h3>
-                        <p class="font-body-md text-body-md text-on-surface-variant flex-grow">Entérate de nuestros rescates recientes, campañas de esterilización y próximos eventos.</p>
-                        <span class="text-secondary font-label-sm text-label-sm flex items-center gap-1 group-hover:gap-2 transition-all">Leer noticias <span class="material-symbols-outlined text-[18px]">arrow_forward</span></span>
+                        <p class="font-body-md text-body-md text-on-surface-variant flex-grow">Entérate de nuestros
+                            rescates recientes, campañas de esterilización y próximos eventos.</p>
+                        <span
+                            class="text-secondary font-label-sm text-label-sm flex items-center gap-1 group-hover:gap-2 transition-all">Leer
+                            noticias <span class="material-symbols-outlined text-[18px]">arrow_forward</span></span>
                     </a>
                 </div>
             </div>
@@ -196,78 +284,111 @@
                 <div class="flex justify-between items-end mb-10">
                     <div>
                         <h2 class="font-h2 text-h2 text-on-surface mb-2">Esperan por ti</h2>
-                        <p class="font-body-md text-body-md text-on-surface-variant">Conoce a algunos de nuestros peludos listos para ir a casa.</p>
+                        <p class="font-body-md text-body-md text-on-surface-variant">Conoce a algunos de nuestros
+                            peludos listos para ir a casa.</p>
                     </div>
-                    <a href="../adopciones/code.html" class="hidden sm:flex font-label-sm text-label-sm text-primary hover:text-primary-container transition-colors items-center gap-1">
+                    <a href="../adopciones/code.html"
+                        class="hidden sm:flex font-label-sm text-label-sm text-primary hover:text-primary-container transition-colors items-center gap-1">
                         Ver todos <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
                     </a>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <article class="bg-surface rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-surface-container hover:shadow-lg transition-all duration-300">
+                    <article
+                        class="bg-surface rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-surface-container hover:shadow-lg transition-all duration-300">
                         <div class="h-56 overflow-hidden">
-                            <img src="https://www.catalunyaplants.com/wp-content/uploads/2015/01/golden-retriever.jpg" alt="Luna" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                            <img src="https://www.catalunyaplants.com/wp-content/uploads/2015/01/golden-retriever.jpg"
+                                alt="Luna"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div class="p-6">
                             <div class="flex justify-between items-center mb-2">
                                 <h3 class="font-h3 text-[20px] text-on-surface">Luna</h3>
-                                <span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-sm text-[12px]">Cachorro</span>
+                                <span
+                                    class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full font-label-sm text-[12px]">Cachorro</span>
                             </div>
-                            <p class="font-body-md text-sm text-on-surface-variant mb-4">Golden Retriever Mix • Hembra</p>
-                            <a href="../adopciones/code.html" class="block text-center w-full py-2 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors">Conocer a Luna</a>
+                            <p class="font-body-md text-sm text-on-surface-variant mb-4">Golden Retriever Mix • Hembra
+                            </p>
+                            <a href="../adopciones/code.html"
+                                class="block text-center w-full py-2 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors">Conocer
+                                a Luna</a>
                         </div>
                     </article>
 
-                    <article class="bg-surface rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-surface-container hover:shadow-lg transition-all duration-300">
+                    <article
+                        class="bg-surface rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-surface-container hover:shadow-lg transition-all duration-300">
                         <div class="h-56 overflow-hidden">
-                            <img src="https://assets.elanco.com/8e0bf1c2-1ae4-001f-9257-f2be3c683fb1/f1787514-7f19-4732-88e7-c2842b8cbf61/ron%20%282%29.jpg?w=1920&q=75&auto=format" alt="Simba" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                            <img src="https://assets.elanco.com/8e0bf1c2-1ae4-001f-9257-f2be3c683fb1/f1787514-7f19-4732-88e7-c2842b8cbf61/ron%20%282%29.jpg?w=1920&q=75&auto=format"
+                                alt="Simba"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div class="p-6">
                             <div class="flex justify-between items-center mb-2">
                                 <h3 class="font-h3 text-[20px] text-on-surface">Simba</h3>
-                                <span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-[12px]">Adulto</span>
+                                <span
+                                    class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-[12px]">Adulto</span>
                             </div>
                             <p class="font-body-md text-sm text-on-surface-variant mb-4">Mestizo • Macho</p>
-                            <a href="../adopciones/code.html" class="block text-center w-full py-2 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors">Conocer a Simba</a>
+                            <a href="../adopciones/code.html"
+                                class="block text-center w-full py-2 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors">Conocer
+                                a Simba</a>
                         </div>
                     </article>
 
-                    <article class="bg-surface rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-surface-container hover:shadow-lg transition-all duration-300 hidden md:block">
+                    <article
+                        class="bg-surface rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.03)] border border-surface-container hover:shadow-lg transition-all duration-300 hidden md:block">
                         <div class="h-56 overflow-hidden">
-                            <img src="https://www.publicdomainpictures.net/pictures/380000/velka/hund-mix-schaferhund-niedlich.jpg" alt="Max" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                            <img src="https://www.publicdomainpictures.net/pictures/380000/velka/hund-mix-schaferhund-niedlich.jpg"
+                                alt="Max"
+                                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div class="p-6">
                             <div class="flex justify-between items-center mb-2">
                                 <h3 class="font-h3 text-[20px] text-on-surface">Max</h3>
-                                <span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-[12px]">Adulto</span>
+                                <span
+                                    class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-[12px]">Adulto</span>
                             </div>
                             <p class="font-body-md text-sm text-on-surface-variant mb-4">Pastor Mix • Macho</p>
-                            <a href="../adopciones/code.html" class="block text-center w-full py-2 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors">Conocer a Max</a>
+                            <a href="../adopciones/code.html"
+                                class="block text-center w-full py-2 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors">Conocer
+                                a Max</a>
                         </div>
                     </article>
                 </div>
-                
+
                 <div class="mt-8 text-center sm:hidden">
-                    <a href="../adopciones/code.html" class="inline-flex bg-surface-container-high text-on-surface font-label-sm text-label-sm px-6 py-3 rounded-full">Ver todos los animales</a>
+                    <a href="../adopciones/code.html"
+                        class="inline-flex bg-surface-container-high text-on-surface font-label-sm text-label-sm px-6 py-3 rounded-full">Ver
+                        todos los animales</a>
                 </div>
             </div>
         </section>
 
         <section class="py-16 md:py-24 bg-surface">
             <div class="max-w-container_max mx-auto px-gutter">
-                <div class="bg-primary-container rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden shadow-sm">
-                    <div class="absolute -top-32 -left-32 w-80 h-80 bg-primary-fixed opacity-30 rounded-full blur-3xl"></div>
-                    <div class="absolute -bottom-32 -right-32 w-80 h-80 bg-inverse-primary opacity-20 rounded-full blur-3xl"></div>
-                    
+                <div
+                    class="bg-primary-container rounded-3xl p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden shadow-sm">
+                    <div class="absolute -top-32 -left-32 w-80 h-80 bg-primary-fixed opacity-30 rounded-full blur-3xl">
+                    </div>
+                    <div
+                        class="absolute -bottom-32 -right-32 w-80 h-80 bg-inverse-primary opacity-20 rounded-full blur-3xl">
+                    </div>
+
                     <div class="relative z-10 md:w-1/2 text-on-primary-container text-center md:text-left">
                         <h2 class="font-h2 text-[32px] md:text-[40px] mb-4">¿No puedes adoptar hoy?</h2>
-                        <p class="font-body-lg text-lg mb-8 opacity-90">Tu aporte económico nos permite comprar alimento, medicinas y pagar cirugías de emergencia para animales rescatados en condiciones críticas.</p>
-                        <a href="../donaciones/code.html" class="inline-flex bg-on-primary-container text-primary-container font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-white active:scale-95 transition-all items-center gap-2">
-                            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span> Haz un aporte mensual
+                        <p class="font-body-lg text-lg mb-8 opacity-90">Tu aporte económico nos permite comprar
+                            alimento, medicinas y pagar cirugías de emergencia para animales rescatados en condiciones
+                            críticas.</p>
+                        <a href="../donaciones/code.html"
+                            class="inline-flex bg-on-primary-container text-primary-container font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-white active:scale-95 transition-all items-center gap-2">
+                            <span class="material-symbols-outlined"
+                                style="font-variation-settings: 'FILL' 1;">favorite</span> Haz un aporte mensual
                         </a>
                     </div>
                     <div class="relative z-10 md:w-1/2 w-full max-w-md">
-                         <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Perros siendo cuidados" class="w-full aspect-square md:aspect-[4/3] object-cover rounded-2xl shadow-xl transform rotate-2 hover:rotate-0 transition-transform duration-500" />
+                        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Perros siendo cuidados"
+                            class="w-full aspect-square md:aspect-[4/3] object-cover rounded-2xl shadow-xl transform rotate-2 hover:rotate-0 transition-transform duration-500" />
                     </div>
                 </div>
             </div>
@@ -281,14 +402,19 @@
                 <p class="font-sans text-sm text-stone-500">© 2024 CAAN. Todos los derechos reservados.</p>
             </div>
             <div class="flex flex-col space-y-2">
-                <a class="font-sans text-sm text-stone-500 hover:text-emerald-600 hover:underline transition-all opacity-80 hover:opacity-100" href="#">Privacidad</a>
-                <a class="font-sans text-sm text-stone-500 hover:text-emerald-600 hover:underline transition-all opacity-80 hover:opacity-100" href="#">Términos de Uso</a>
-                <a class="font-sans text-sm text-stone-500 hover:text-emerald-600 hover:underline transition-all opacity-80 hover:opacity-100" href="#">Voluntariado</a>
-                <a class="font-sans text-sm text-stone-500 hover:text-emerald-600 hover:underline transition-all opacity-80 hover:opacity-100" href="#">Prensa</a>
+                <a class="font-sans text-sm text-stone-500 hover:text-emerald-600 hover:underline transition-all opacity-80 hover:opacity-100"
+                    href="#">Privacidad</a>
+                <a class="font-sans text-sm text-stone-500 hover:text-emerald-600 hover:underline transition-all opacity-80 hover:opacity-100"
+                    href="#">Términos de Uso</a>
+                <a class="font-sans text-sm text-stone-500 hover:text-emerald-600 hover:underline transition-all opacity-80 hover:opacity-100"
+                    href="#">Voluntariado</a>
+                <a class="font-sans text-sm text-stone-500 hover:text-emerald-600 hover:underline transition-all opacity-80 hover:opacity-100"
+                    href="#">Prensa</a>
             </div>
             <div class="flex flex-col space-y-4 items-start md:items-end">
                 <a href="../contacto/code.html">
-                    <button class="bg-primary-container text-on-primary-container font-label-sm text-label-sm px-6 py-2 rounded-full hover:bg-primary transition-colors hover:text-on-primary">
+                    <button
+                        class="bg-primary-container text-on-primary-container font-label-sm text-label-sm px-6 py-2 rounded-full hover:bg-primary transition-colors hover:text-on-primary">
                         Contáctanos
                     </button>
                 </a>
@@ -296,4 +422,5 @@
         </div>
     </footer>
 </body>
+
 </html>
