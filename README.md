@@ -1,150 +1,248 @@
+# CAAN - Centro de Adopción de Animales de Necochea
+
+![CAAN Logo](./CaanLogo.png)
+
+## 📋 Descripción
+
+CAAN (Centro de Adopción de Animales de Necochea) es un sitio web diseñado para facilitar la adopción de animales rescatados, promover el voluntariado y recibir donaciones para el cuidado de mascotas en situación de calle. El proyecto busca crear un puente entre los animales que necesitan un hogar y las familias que desean adoptarlos.
+
+## 🎯 Características Principales
+
+- **Sistema de Adopciones**: Catálogo completo de animales disponibles para adopción con filtros por tipo, edad y características
+- **Gestión de Denuncias**: Formulario confidencial para reportar casos de maltrato o abandono animal
+- **Portal de Donaciones**: Sistema de donaciones único o recurrente con múltiples opciones de monto
+- **Noticias y Actualizaciones**: Sección de noticias sobre rescates, eventos y actividades del centro
+- **Información de Contacto**: Múltiples canales de comunicación con el centro
+- **FAQ Interactivo**: Preguntas frecuentes organizadas por categorías
+- **Diseño Responsivo**: Totalmente adaptado para dispositivos móviles, tablets y desktop
+
+## 🛠️ Tecnologías Utilizadas
+
+- **HTML5**: Estructura semántica del sitio
+- **Tailwind CSS**: Framework CSS para el diseño responsivo
+- **JavaScript**: Funcionalidades interactivas (menú móvil, navegación)
+- **Google Fonts**: 
+  - Be Vietnam Pro (cuerpo de texto)
+  - Plus Jakarta Sans (encabezados)
+- **Material Symbols**: Iconografía moderna y consistente
+
+## 📁 Estructura del Proyecto
+
+```
+CAAN/
+│
+├── index.html              # Página principal
+├── adopciones.html         # Catálogo de animales en adopción
+├── sobre_nosotros.html     # Historia y presentación del centro
+├── noticias.html           # Noticias y actualizaciones
+├── faq.html                # Preguntas frecuentes
+├── denuncias.html          # Formulario de denuncias
+├── contacto.html           # Información de contacto
+├── donaciones.html         # Portal de donaciones
+├── CaanLogo.png           # Logo del centro
+└── README.md              # Este archivo
+```
+
+## 🎨 Paleta de Colores
+
+El diseño utiliza un sistema de colores basado en Material Design 3:
+
+- **Primary**: `#0f5238` (Verde oscuro)
+- **Primary Container**: `#2d6a4f`
+- **Secondary**: `#895100` (Naranja/Dorado)
+- **Secondary Container**: `#fd9d1a`
+- **Tertiary**: `#713638` (Rojo oscuro)
+- **Error**: `#ba1a1a`
+- **Background**: `#f8faf6`
+- **Surface**: `#f8faf6`
+
+## 🚀 Instalación y Uso
+
+### Requisitos Previos
+
+- Navegador web moderno (Chrome, Firefox, Safari, Edge)
+- Conexión a internet (para cargar Tailwind CSS y fuentes)
+
+### Instalación
+
+1. Clona o descarga el repositorio:
+```bash
+git clone https://github.com/tu-usuario/caan.git
+```
+
+2. Navega al directorio del proyecto:
+```bash
+cd caan
+```
+
+3. Abre `index.html` en tu navegador preferido:
+```bash
+# En Linux/Mac
+open index.html
+
+# En Windows
+start index.html
+```
+
+### Despliegue
+
+El sitio es completamente estático y puede desplegarse en cualquier servicio de hosting:
+
+- **GitHub Pages**
+- **Netlify**
+- **Vercel**
+- **Firebase Hosting**
+- Cualquier servidor web tradicional
+
+## 📱 Características Responsivas
+
+El sitio está optimizado para:
+
+- 📱 **Móviles**: 320px - 767px
+- 📱 **Tablets**: 768px - 1023px
+- 💻 **Desktop**: 1024px en adelante
+
+### Breakpoints de Tailwind
+
+```css
+sm: 640px   /* Smartphones en landscape */
+md: 768px   /* Tablets */
+lg: 1024px  /* Desktop pequeño */
+xl: 1280px  /* Desktop grande */
+```
+
+## 🧩 Componentes Principales
+
+### Navegación
+- Menú de escritorio con enlaces principales
+- Menú móvil tipo hamburguesa
+- Botón CTA de "Donar" siempre visible
+- Logo clickeable que retorna al inicio
+
+### Tarjetas de Animales
+- Imagen principal con botón de navegación
+- Información básica (nombre, raza, edad)
+- Etiquetas de categoría (Cachorro, Adulto, Senior)
+- Botón de acción para conocer más
+
+### Formularios
+- Campos de entrada con validación visual
+- Selectores personalizados
+- Textareas redimensionables
+- Botones de envío con feedback visual
+
+## 🔧 Personalización
+
+### Modificar Colores
+
+Los colores se definen en la configuración de Tailwind dentro de cada archivo HTML:
+
+```javascript
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        // Modifica aquí los colores
+        primary: "#0f5238",
+        // ...
+      }
+    }
+  }
+}
+```
+
+### Modificar Tipografía
+
+Las fuentes se importan desde Google Fonts. Para cambiarlas, actualiza los enlaces en el `<head>`:
+
+```html
+<link href="https://fonts.googleapis.com/css2?family=Tu+Fuente&display=swap" rel="stylesheet" />
+```
+
+## 📊 Secciones del Sitio
+
+### 1. **Inicio** (`index.html`)
+- Hero section con call-to-action
+- Tarjetas de acciones rápidas (Denuncias, Voluntariado, Noticias)
+- Galería de animales destacados
+- Banner de donación
+
+### 2. **Adopciones** (`adopciones.html`)
+- Sistema de filtros (Todos, Perros, Gatos, Casos Especiales)
+- Buscador de animales
+- Grid responsivo de tarjetas
+- Paginación
+
+### 3. **Sobre Nosotros** (`sobre_nosotros.html`)
+- Historia del centro
+- Galería de fotos del predio
+- Información sobre instalaciones
+- Misión y visión
+
+### 4. **Noticias** (`noticias.html`)
+- Grid de noticias recientes
+- Categorías (Rescate, Instalaciones, Comunidad)
+- Búsqueda y filtros
+- Paginación
+
+### 5. **FAQ** (`faq.html`)
+- Navegación lateral por categorías
+- Acordeones expandibles
+- Tarjeta de contacto
+- Información sobre adopción y voluntariado
+
+### 6. **Denuncias** (`denuncias.html`)
+- Formulario confidencial
+- Opciones de anonimato
+- Carga de evidencia (fotos/videos)
+- Mensajes de seguridad y privacidad
+
+### 7. **Contacto** (`contacto.html`)
+- Formulario de contacto
+- Información de ubicación
+- Horarios de atención
+- Mapa integrado
+- Links a redes sociales
+
+### 8. **Donaciones** (`donaciones.html`)
+- Opciones de donación única o mensual
+- Selector de montos predefinidos
+- Entrada personalizada de monto
+- Indicador de progreso de meta
+- Lista de insumos necesarios
+
+## 🤝 Contribución
+
+Si deseas contribuir al proyecto:
+
+1. Fork el repositorio
+2. Crea una rama para tu feature (`git checkout -b feature/NuevaCaracteristica`)
+3. Commit tus cambios (`git commit -m 'Agrega nueva característica'`)
+4. Push a la rama (`git push origin feature/NuevaCaracteristica`)
+5. Abre un Pull Request
+
+## 📞 Información de Contacto
+
+**CAAN - Centro de Adopción de Animales de Necochea**
+
+- 📍 **Residencia**: Calle 521-3554, Quequén, Pcia. Buenos Aires
+- 📍 **Predio**: Calle 107 y 66, Necochea, Pcia. Buenos Aires
+- 📧 **Email**: caan_necochea@gmail.com
+- 📱 **Teléfono**: +54 (2262) 12-3456
+- 🕒 **Horarios**: Lunes a Domingo, 9am - 1pm / 3pm - 6pm
+- 📱 **Instagram**: [@caanecochea](https://www.instagram.com/caanecochea/)
+- 📘 **Facebook**: [CAAN Necochea](https://www.facebook.com/groups/291987354785530)
+
+## 📄 Licencia
+
+© 2024 CAAN. Todos los derechos reservados.
+
+## 🐾 Estado del Proyecto
+
+**Versión**: prototipo  
+**Estado**: Activo y en mantenimiento  
+**Última actualización**: 2024
+
 ---
-name: Caan_Prototipo
-colors:
-  surface: '#f8faf6'
-  surface-dim: '#d8dbd7'
-  surface-bright: '#f8faf6'
-  surface-container-lowest: '#ffffff'
-  surface-container-low: '#f2f4f0'
-  surface-container: '#eceeea'
-  surface-container-high: '#e7e9e5'
-  surface-container-highest: '#e1e3df'
-  on-surface: '#191c1a'
-  on-surface-variant: '#404943'
-  inverse-surface: '#2e312f'
-  inverse-on-surface: '#eff1ed'
-  outline: '#707973'
-  outline-variant: '#bfc9c1'
-  surface-tint: '#2c694e'
-  primary: '#0f5238'
-  on-primary: '#ffffff'
-  primary-container: '#2d6a4f'
-  on-primary-container: '#a8e7c5'
-  inverse-primary: '#95d4b3'
-  secondary: '#895100'
-  on-secondary: '#ffffff'
-  secondary-container: '#fd9d1a'
-  on-secondary-container: '#663b00'
-  tertiary: '#713638'
-  on-tertiary: '#ffffff'
-  tertiary-container: '#8d4d4e'
-  on-tertiary-container: '#ffcfce'
-  error: '#ba1a1a'
-  on-error: '#ffffff'
-  error-container: '#ffdad6'
-  on-error-container: '#93000a'
-  primary-fixed: '#b1f0ce'
-  primary-fixed-dim: '#95d4b3'
-  on-primary-fixed: '#002114'
-  on-primary-fixed-variant: '#0e5138'
-  secondary-fixed: '#ffdcbc'
-  secondary-fixed-dim: '#ffb86b'
-  on-secondary-fixed: '#2c1700'
-  on-secondary-fixed-variant: '#683d00'
-  tertiary-fixed: '#ffdad9'
-  tertiary-fixed-dim: '#ffb3b3'
-  on-tertiary-fixed: '#390b0e'
-  on-tertiary-fixed-variant: '#6f3537'
-  background: '#f8faf6'
-  on-background: '#191c1a'
-  surface-variant: '#e1e3df'
-typography:
-  h1:
-    fontFamily: Plus Jakarta Sans
-    fontSize: 48px
-    fontWeight: '700'
-    lineHeight: '1.2'
-  h2:
-    fontFamily: Plus Jakarta Sans
-    fontSize: 36px
-    fontWeight: '700'
-    lineHeight: '1.2'
-  h3:
-    fontFamily: Plus Jakarta Sans
-    fontSize: 24px
-    fontWeight: '600'
-    lineHeight: '1.3'
-  body-lg:
-    fontFamily: Be Vietnam Pro
-    fontSize: 18px
-    fontWeight: '400'
-    lineHeight: '1.6'
-  body-md:
-    fontFamily: Be Vietnam Pro
-    fontSize: 16px
-    fontWeight: '400'
-    lineHeight: '1.6'
-  label-sm:
-    fontFamily: Be Vietnam Pro
-    fontSize: 14px
-    fontWeight: '600'
-    lineHeight: '1.2'
-    letterSpacing: 0.02em
-rounded:
-  sm: 0.25rem
-  DEFAULT: 0.5rem
-  md: 0.75rem
-  lg: 1rem
-  xl: 1.5rem
-  full: 9999px
-spacing:
-  base: 8px
-  xs: 4px
-  sm: 12px
-  md: 24px
-  lg: 48px
-  xl: 80px
-  container_max: 1280px
-  gutter: 24px
----
 
-## Brand & Style
-
-The brand personality of this design system is compassionate, reliable, and deeply human-centric. It targets animal lovers, potential adopters, and community advocates, evoking feelings of safety, warmth, and hope. The UI facilitates an emotional connection between the user and the animals through a "Soft Modern" aesthetic.
-
-The design style blends **Minimalism** with **Tactile** elements. By using generous whitespace and high-quality photography, the focus remains on the animals. Subtle shadows and organic shapes provide a sense of approachability, moving away from corporate rigidity toward a welcoming, community-focused digital environment.
-
-## Colors
-
-The palette is anchored by an earthy "Forest Green" primary color, symbolizing growth and nature, paired with a "Soft Orange" secondary color for highlights and energy. 
-
-- **Primary (Forest Green):** Used for main navigation, primary actions, and brand-heavy sections.
-- **Secondary (Soft Orange):** Reserved for interaction accents like hover states and success indicators.
-- **Denuncias (Alert Red):** A high-visibility, urgent red used exclusively for reporting abuse or emergencies.
-- **Donaciones (Sky Blue):** A calming, trustworthy celeste used for financial support and contribution modules.
-- **Neutrals:** Warm-tinted greys prevent the interface from feeling clinical, maintaining a "domestic" and cozy atmosphere.
-
-## Typography
-
-This design system utilizes **Plus Jakarta Sans** for headings to provide a modern, friendly, and slightly rounded character that feels optimistic. **Be Vietnam Pro** is used for body copy and labels because of its exceptional readability and contemporary warmth, ensuring that long-form adoption stories are easy to digest.
-
-Text hierarchy should be strictly maintained to guide the user's eye from emotional storytelling (Headlines) to functional details (Body). Use darker shades of the primary green for headings instead of pure black to maintain the earthy, organic feel.
-
-## Layout & Spacing
-
-The layout follows a **Fixed Grid** model on desktop (12 columns) and a **Fluid Grid** on mobile devices. The spacing rhythm is based on an 8px scale, favoring generous padding to create a sense of calm and order. 
-
-Section transitions should use large vertical padding (lg or xl units) to prevent the content from feeling cluttered. Content blocks should be centered with a maximum container width of 1280px to ensure line lengths remain readable for animal biographies and informational articles.
-
-## Elevation & Depth
-
-Visual hierarchy is achieved through **Ambient Shadows** and **Tonal Layers**. Instead of harsh borders, surfaces are defined by soft, diffused shadows with a slight tint of the primary color to keep the depth feeling natural.
-
-- **Level 1 (Cards):** Very soft shadow (10% opacity, 15px blur) to lift animal profiles from the background.
-- **Level 2 (Modals/Navigation):** Medium shadow (15% opacity, 30px blur) to indicate high-priority interaction.
-- **Backgrounds:** Use subtle tonal shifts between #F8F9FA and pure white to separate content sections without using lines.
-
-## Shapes
-
-The shape language is defined by significant roundedness to evoke friendliness and safety. "Rounded" (Level 2) is the standard, ensuring that no sharp corners exist in the UI. 
-
-Image containers for animal photos should use `rounded-xl` (1.5rem) to mimic the soft appearance of organic shapes. Buttons and input fields use `rounded-lg` (1rem) to maintain a consistent, approachable feel that invites interaction.
-
-## Components
-
-- **Buttons:** Primary buttons use a solid Forest Green fill with white text. The "Donar" button utilizes the Light Blue palette, while "Reportar Maltrato" uses the Prominent Red. All buttons feature a subtle scale-down effect on press to feel tactile.
-- **Cards:** Adoptable animal cards feature a large image at the top with `rounded-xl` corners, a title in H3, and small chips for age/breed.
-- **Chips:** Used for animal traits (e.g., "Friendly," "Vaccinated"). These should have a light secondary-color background with dark text and fully pill-shaped corners.
-- **Input Fields:** Large tap targets with a soft grey border that turns Primary Green on focus. Labels should always be visible above the field.
-- **Progress Bars:** For donation campaigns, use the Sky Blue color for the fill, with a rounded container to show "funding reached" in a non-stressful way.
-- **Pet Badges:** Circular icons with soft illustrations to represent "Cat," "Dog," or "Special Needs" categories.
+**Hecho con ❤️ para los animales de Necochea**

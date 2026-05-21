@@ -13,6 +13,12 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
+    <script type="module">
+        import { swiffyslider } from 'https://cdn.jsdelivr.net/npm/swiffy-slider@2.1.0/dist/js/swiffy-slider.js';
+        window.addEventListener('load', () => swiffyslider.init());
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@2.1.0/dist/css/swiffy-slider.css" rel="stylesheet"
+        crossorigin="anonymous">
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -130,8 +136,7 @@
         <div class="max-w-[1280px] mx-auto flex justify-between items-center px-4 md:px-8 h-20">
 
             <!-- Logo -->
-            <a class="flex items-center flex-shrink-0 lg:pt-14"
-                href="./index.html">
+            <a class="flex items-center flex-shrink-0 lg:pt-14" href="./index.html">
                 <img src="./CaanLogo.png" alt="Logo CAAN" class="w-20 md:w-32 h-auto transition-all duration-300" />
             </a>
 
@@ -198,28 +203,30 @@
             </div>
         </div>
     </nav>
-
+    <!-- Fin del menú -->
+    <!-- Main seccion -->
+    <!-- Primera seccion -->
     <main class="flex-grow w-full">
         <section class="relative bg-surface-container-low overflow-hidden">
             <div
                 class="max-w-container_max mx-auto px-gutter py-16 md:py-24 flex flex-col lg:flex-row items-center gap-12">
                 <div class="flex-1 space-y-6 z-10 text-center lg:text-left">
-                    <span
-                        class="inline-block px-4 py-2 bg-primary-container text-on-primary-container font-label-sm text-label-sm rounded-full mb-2">Centro
-                        de Adopción de Animales</span>
-                    <h1 class="font-h1 text-[40px] md:text-[56px] text-on-surface leading-tight">Dale un hogar a quien
-                        más lo necesita</h1>
+                    <h1
+                        class="inline-block px-4 py-2 bg-primary-container text-white font-label-2xl text-label-2xl rounded-full mb-2">Centro
+                        de Ayuda al Animal de Necochea</h1>
+                    <h2 class="font-h1 text-[40px] md:text-[50px] text-on-surface leading-tight">Dale un hogar a quien
+                        más lo necesita</h2>
                     <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto lg:mx-0">
                         Rescatamos, rehabilitamos y buscamos familias amorosas para animales en situación de calle.
                         Conoce a tu nuevo mejor amigo o ayúdanos a seguir cambiando vidas.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
                         <a href="./adopciones.html"
-                            class="bg-primary text-on-primary font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-primary/90 active:scale-95 transition-all shadow-sm text-center">
+                            class="bg-amber-700 text-on-primary border border-outline-variant font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-amber-700/85 transition-all text-center">
                             Adoptar ahora
                         </a>
                         <a href="./donaciones.html"
-                            class="bg-surface-container-lowest text-on-surface border border-outline-variant font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-surface-container transition-all text-center">
+                            class="bg-primary text-on-primary font-label-sm text-label-sm px-8 py-4 rounded-full hover:bg-primary/90 active:scale-95 transition-all shadow-sm text-center">
                             Hacer una donación
                         </a>
                     </div>
@@ -230,55 +237,104 @@
                 </div>
             </div>
         </section>
+        <!-- Fin de la primera seccion -->
 
-        <section class="py-16 bg-surface">
-            <div class="max-w-container_max mx-auto px-gutter">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <a href="../denuncias/code.html"
-                        class="group bg-error-container/20 border border-error-container/30 p-8 rounded-2xl flex flex-col items-start gap-4 hover:shadow-[0_8px_30px_rgba(186,26,26,0.1)] transition-all">
-                        <div
-                            class="w-12 h-12 bg-error-container text-on-error-container rounded-full flex items-center justify-center">
-                            <span class="material-symbols-outlined text-[24px]">warning</span>
-                        </div>
-                        <h3 class="font-h3 text-h3 text-on-surface">Reportar Maltrato</h3>
-                        <p class="font-body-md text-body-md text-on-surface-variant flex-grow">Si eres testigo de
-                            abandono o maltrato animal, repórtalo de forma segura y confidencial.</p>
-                        <span
-                            class="text-error font-label-sm text-label-sm flex items-center gap-1 group-hover:gap-2 transition-all">Hacer
-                            denuncia <span class="material-symbols-outlined text-[18px]">arrow_forward</span></span>
-                    </a>
+        <!-- SECCION SLIDER NOTICIAS-->
+        <section
+            class="mb-lg mt-lg relative w-[95%] md:w-[75%] lg:w-[90%] mx-auto overflow-hidden bg-white shadow-sm border border-outline-variant/20 rounded-xl"
+            id="newsSlider">
 
-                    <a href="../contacto/code.html"
-                        class="group bg-tertiary-container/10 border border-tertiary-container/30 p-8 rounded-2xl flex flex-col items-start gap-4 hover:shadow-[0_8px_30px_rgba(113,54,56,0.1)] transition-all">
-                        <div
-                            class="w-12 h-12 bg-tertiary-container text-on-tertiary-container rounded-full flex items-center justify-center">
-                            <span class="material-symbols-outlined text-[24px]">volunteer_activism</span>
-                        </div>
-                        <h3 class="font-h3 text-h3 text-on-surface">Sé Voluntario</h3>
-                        <p class="font-body-md text-body-md text-on-surface-variant flex-grow">Súmate a nuestro equipo.
-                            Tu dedicación es invaluable para la recuperación de nuestros rescatados.</p>
-                        <span
-                            class="text-tertiary font-label-sm text-label-sm flex items-center gap-1 group-hover:gap-2 transition-all">Saber
-                            más <span class="material-symbols-outlined text-[18px]">arrow_forward</span></span>
-                    </a>
+            <div id="sliderTrack" class="flex transition-transform duration-500 ease-in-out w-full">
 
-                    <a href="../noticias/code.html"
-                        class="group bg-secondary-container/10 border border-secondary-container/30 p-8 rounded-2xl flex flex-col items-start gap-4 hover:shadow-[0_8px_30px_rgba(137,81,0,0.1)] transition-all">
-                        <div
-                            class="w-12 h-12 bg-secondary-container text-on-secondary-container rounded-full flex items-center justify-center">
-                            <span class="material-symbols-outlined text-[24px]">newspaper</span>
+                <article class="w-full flex-shrink-0 flex flex-col md:flex-row">
+                    <div class="w-full md:w-1/2 h-64 md:h-[350px] lg:h-[400px] relative overflow-hidden">
+                        <img alt="Gatito recién rescatado" class="w-full h-full object-cover rounded-xl"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwMrTlVsdeH3XtY0W76smRzG2FCYHG-A01v1hiGQ--BFfLOaHqGtKvEJ0BaQCeBwV5X-qHCbcjUUlInKAwdSAVFGqUJrRZoJP5iCpUysx08hoWaQD3nu7mnqJvNS86oUfGf6sRw0YmO3p9MDydsELLIooX-e3ZJCt0obZXsPEMHBAzUQ5Gp4upLG7yrXpVM_e3aPR9HOxCFLodtercdj49BGj1xXKTohc-FyNm0T8DsK6mK3RBZZcXOjcBs4VBrKYhu2WOBuiLW7KO" />
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-surface/90 backdrop-blur text-on-surface font-label-sm px-3 py-1 rounded-md text-xs shadow">Rescate</span>
                         </div>
-                        <h3 class="font-h3 text-h3 text-on-surface">Últimas Noticias</h3>
-                        <p class="font-body-md text-body-md text-on-surface-variant flex-grow">Entérate de nuestros
-                            rescates recientes, campañas de esterilización y próximos eventos.</p>
-                        <span
-                            class="text-secondary font-label-sm text-label-sm flex items-center gap-1 group-hover:gap-2 transition-all">Leer
-                            noticias <span class="material-symbols-outlined text-[18px]">arrow_forward</span></span>
-                    </a>
-                </div>
+                    </div>
+                    <div class="w-full md:w-1/2 p-6 md:p-10 flex flex-col justify-center bg-surface-container-lowest">
+                        <div class="text-outline font-label-sm text-sm mb-3">15 Octubre, 2025</div>
+                        <h3 class="text-2xl md:text-3xl text-primary font-bold mb-3 leading-tight">
+                            Rescatamos a 5 gatitos abandonados en el centro
+                        </h3>
+                        <p class="text-base text-on-surface-variant mb-6 line-clamp-4 w-[70%]">
+                            Gracias al aviso rápido de la comunidad, pudimos rescatar a esta camada antes de la
+                            tormenta. Ya están recibiendo cuidados veterinarios.
+                        </p>
+                        <a href="#" class="text-primary font-semibold hover:underline mt-auto md:mt-0">Leer noticia
+                            completa</a>
+                    </div>
+                </article>
+
+                <article class="w-full flex-shrink-0 flex flex-col md:flex-row-reverse">
+                    <div class="w-full md:w-1/2 h-64 md:h-[350px] lg:h-[400px] relative overflow-hidden flex-end">
+                        <img alt="Nuevo centro de juegos" class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxKRakfasxoMGhmcBgzDfYJ_lbaNg2Tit7sSfytdLIRfGrN7PodAoX4RozksxQQq8AJ6VVuA96soc1c5cyUUSDa4XJE8SOg9ABgCxRw1fUCRqqdvlnwdJduuuw8e4MM6O6oAD1FnX3b6l8bf8DYTGWAzmkcPosHAvJR6mtWxFLqAtjZnn518ak2ghN33_WtMA_WLoAlr6oUqqBqhTmwk5TplaDY2tk0ZshV2V4lAXEwS0ZUVTsgn9AuGSDcQvZf4v4APGX8VOU5eKb" />
+                        <div class="absolute top-4 right-4 md:left-4 md:right-auto">
+                            <span
+                                class="bg-surface/90 backdrop-blur text-on-surface font-label-sm px-3 py-1 rounded-md text-xs shadow">Instalaciones</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 p-6 md:p-10 flex flex-col justify-center bg-surface-container-lowest">
+                        <div class="text-outline font-label-sm text-sm mb-3">10 Octubre, 2025</div>
+                        <h3 class="text-2xl md:text-3xl text-primary font-bold mb-3 leading-tight">
+                            ¡Inauguramos nuestra nueva área de juegos!
+                        </h3>
+                        <p class="text-base text-on-surface-variant mb-6 line-clamp-4 w-[70%]">
+                            Gracias a sus donaciones, hemos completado la construcción del patio techado para días de
+                            lluvia. Los animales ya lo están disfrutando.
+                        </p>
+                        <a href="#" class="text-primary font-semibold hover:underline mt-auto md:mt-0">Leer noticia completa</a>
+                    </div>
+                </article>
+
+                <article class="w-full flex-shrink-0 flex flex-col md:flex-row">
+                    <div class="w-full md:w-1/2 h-64 md:h-[350px] lg:h-[400px] relative overflow-hidden">
+                        <img alt="Voluntarios" class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdz9bKCRWUgXDGhmyls0FN2f_q23hRv2MwleeUVPV7vEAshTohsyV3yl6Fod-D70ABAHp5Kv92Hm0ZE2xo_3Ybgo7-wmoUaYReHjn38EGWAHt-Ps5vv5yR5qVSo69wPFDUATjMydtIEDBKKoSe_kLmGetxmqmLnfDJvo5hVa2EMUBhil5mWtJhZYSOEj5gPfadLVBqD5iwXCnBXrW9roUCckjIL8gBLWD_rzv8MfcZf1guToqF-MaP_TFtRr2EXpGGLDuIua1AJ0hO" />
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-surface/90 backdrop-blur text-on-surface font-label-sm px-3 py-1 rounded-md text-xs shadow">Comunidad</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 p-6 md:p-10 flex flex-col justify-center bg-surface-container-lowest">
+                        <div class="text-outline font-label-sm text-sm mb-3">05 Octubre, 2025</div>
+                        <h3 class="text-2xl md:text-3xl text-primary font-bold mb-3 leading-tight">
+                            Programa de Voluntariado 2025: Inscripciones
+                        </h3>
+                        <p class="text-base text-on-surface-variant mb-6 line-clamp-4 w-[70%]">
+                            Buscamos personas apasionadas por el bienestar animal para unirse a nuestro equipo el
+                            próximo año. ¡Súmate a la causa!
+                        </p>
+                        <a href="#" class="text-primary font-semibold hover:underline mt-auto md:mt-0">Leer noticia completa</a>
+                    </div>
+                </article>
+
             </div>
-        </section>
 
+            <button id="btnPrev"
+                class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 flex justify-center items-center bg-white/90 hover:bg-white rounded-full shadow-lg border border-gray-200 text-gray-800 transition-all z-10"
+                aria-label="Noticia anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-5 h-5 md:w-6 md:h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+            </button>
+            <button id="btnNext"
+                class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 flex justify-center items-center bg-white/90 hover:bg-white rounded-full shadow-lg border border-gray-200 text-gray-800 transition-all z-10"
+                aria-label="Siguiente noticia">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-5 h-5 md:w-6 md:h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </button>
+
+        </section>
+        <!-- FIN SECCION SLIDER NOTICIAS -->
+        <!-- SECCION MINI ADOPCIONESS -->
         <section class="py-16 md:py-24 bg-surface-container-lowest">
             <div class="max-w-container_max mx-auto px-gutter">
                 <div class="flex justify-between items-end mb-10">
@@ -287,7 +343,7 @@
                         <p class="font-body-md text-body-md text-on-surface-variant">Conoce a algunos de nuestros
                             peludos listos para ir a casa.</p>
                     </div>
-                    <a href="../adopciones/code.html"
+                    <a href="./adopciones.html"
                         class="hidden sm:flex font-label-sm text-label-sm text-primary hover:text-primary-container transition-colors items-center gap-1">
                         Ver todos <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
                     </a>
@@ -309,7 +365,7 @@
                             </div>
                             <p class="font-body-md text-sm text-on-surface-variant mb-4">Golden Retriever Mix • Hembra
                             </p>
-                            <a href="../adopciones/code.html"
+                            <a href="./adopciones.html"
                                 class="block text-center w-full py-2 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors">Conocer
                                 a Luna</a>
                         </div>
@@ -329,7 +385,7 @@
                                     class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-[12px]">Adulto</span>
                             </div>
                             <p class="font-body-md text-sm text-on-surface-variant mb-4">Mestizo • Macho</p>
-                            <a href="../adopciones/code.html"
+                            <a href="./adopciones.html"
                                 class="block text-center w-full py-2 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors">Conocer
                                 a Simba</a>
                         </div>
@@ -349,7 +405,7 @@
                                     class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-[12px]">Adulto</span>
                             </div>
                             <p class="font-body-md text-sm text-on-surface-variant mb-4">Pastor Mix • Macho</p>
-                            <a href="../adopciones/code.html"
+                            <a href="./adopciones.html"
                                 class="block text-center w-full py-2 border border-primary text-primary font-label-sm text-label-sm rounded-full hover:bg-primary hover:text-on-primary transition-colors">Conocer
                                 a Max</a>
                         </div>
@@ -357,7 +413,7 @@
                 </div>
 
                 <div class="mt-8 text-center sm:hidden">
-                    <a href="../adopciones/code.html"
+                    <a href="./adopciones.html"
                         class="inline-flex bg-surface-container-high text-on-surface font-label-sm text-label-sm px-6 py-3 rounded-full">Ver
                         todos los animales</a>
                 </div>
@@ -412,7 +468,7 @@
                     href="#">Prensa</a>
             </div>
             <div class="flex flex-col space-y-4 items-start md:items-end">
-                <a href="../contacto/code.html">
+                <a href="./contacto.html">
                     <button
                         class="bg-primary-container text-on-primary-container font-label-sm text-label-sm px-6 py-2 rounded-full hover:bg-primary transition-colors hover:text-on-primary">
                         Contáctanos
@@ -421,6 +477,45 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const track = document.getElementById('sliderTrack');
+            const btnPrev = document.getElementById('btnPrev');
+            const btnNext = document.getElementById('btnNext');
+            const slides = track.querySelectorAll('article');
+
+            let currentIndex = 0;
+            const totalSlides = slides.length;
+
+            // Función para actualizar la posición del slider
+            const updateSlider = () => {
+                // Multiplicamos el índice actual por 100 para mover en X (ej: -100%, -200%)
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            };
+
+            // Botón Siguiente
+            btnNext.addEventListener('click', () => {
+                // Si estamos en la última diapositiva, volvemos a la primera. Si no, avanzamos.
+                if (currentIndex === totalSlides - 1) {
+                    currentIndex = 0;
+                } else {
+                    currentIndex++;
+                }
+                updateSlider();
+            });
+
+            // Botón Anterior
+            btnPrev.addEventListener('click', () => {
+                // Si estamos en la primera diapositiva, vamos a la última. Si no, retrocedemos.
+                if (currentIndex === 0) {
+                    currentIndex = totalSlides - 1;
+                } else {
+                    currentIndex--;
+                }
+                updateSlider();
+            });
+        });
+    </script>
 </body>
 
 </html>
