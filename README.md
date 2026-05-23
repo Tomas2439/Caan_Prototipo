@@ -228,14 +228,12 @@ Si deseas contribuir al proyecto:
 - 📍 **Residencia**: Calle 521-3554, Quequén, Pcia. Buenos Aires
 - 📍 **Predio**: Calle 107 y 66, Necochea, Pcia. Buenos Aires
 - 📧 **Email**: caan_necochea@gmail.com
-- 📱 **Teléfono**: +54 (2262) 12-3456
-- 🕒 **Horarios**: Lunes a Domingo, 9am - 1pm / 3pm - 6pm
 - 📱 **Instagram**: [@caanecochea](https://www.instagram.com/caanecochea/)
 - 📘 **Facebook**: [CAAN Necochea](https://www.facebook.com/groups/291987354785530)
 
 ## 📄 Licencia
 
-© 2024 CAAN. Todos los derechos reservados.
+© 2026 CAAN. Todos los derechos reservados.
 
 ## 🐾 Estado del Proyecto
 
